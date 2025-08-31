@@ -1,0 +1,8 @@
+ int id=1;
+		int section_id = 1;
+		String income = request.getParameter("income");
+		String income_source = request.getParameter("income-source");
+
+
+        //
+        

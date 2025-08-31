@@ -1,0 +1,25 @@
+int id=1;
+        int section_id=1;
+       
+		String family_1_name = request.getParameter("family-1-name");
+		String family_1_sex = request.getParameter("family-1-sex");
+		String family_1_member_level = request.getParameter("family-1-member-level");
+		String family_1_religion = request.getParameter("family-1-religion");
+	    String family_1_education_level = request.getParameter("family-1-education-level");
+		String family_1_job_status = request.getParameter("family-1-job-status");
+		String family_1_marital_status = request.getParameter("family-1-marital-status");
+
+
+                String insertQuery =  "INSERT INTO socio_population (id,section_id,family_name,family_sex,family_member_level,family_religion,family_education_level,family_job_status,family_marital_status)VALUES(?,?,?,?,?,?,?,?,?)";
+
+//
+
+				insertStmt.setInt(1, id);
+				insertStmt.setInt(2, section_id);
+				insertStmt.setString(3, family_1_name);
+				insertStmt.setString(4, family_1_sex);
+				insertStmt.setString(5, family_1_member_level);
+				insertStmt.setString(6, family_1_religion);
+				insertStmt.setString(7, family_1_education_level);
+				insertStmt.setString(8, family_1_job_status);
+				insertStmt.setString(9, family_1_marital_status);

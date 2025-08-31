@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>የማህበረሰብ አቀፌ ትምህርት መረጃ ማሰባሰቢያ መጠይቅ /Questionnaire</title>
+    <style>
+        textarea,
+        th,
+        td,
+        th>input,
+        th>label,
+        th>select,
+        th>select>option,
+        th>select>optgroup,
+        td>input,
+        td>label,
+        td>select,
+        select>option,
+        select,
+        input,
+        fieldset {
+            display: block;
+        }
+        
+        li>input,
+        li>label {
+            display: block;
+        }
+        
+        option,
+        select,
+        input {
+            width: 80%;
+            height: 30px;
+            border-radius: 10px;
+            margin: 5px;
+            padding: 5px;
+        }
+        
+        textarea {
+            width: 80%;
+            height: 100px;
+        }
+        
+        option {
+            text-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="main-header">የማህበረሰብ አቀፍ ትምህርት መረጃ ማሰባሰቢያ መጠይቅ /Questionnaire /</h1>
+    <section class="main-section">
+        <form action="surveySubmition" class="survey" method="get">
+            <label for="collector-name">የመረጃ ሰብሳቢ ስም፡ </label>
+            <input type="text" id="collector-name" name="collector-name">
+            <p>
+                የአልካን ጤና ሳይንስ ኮላጅ ተማሪ ነኝ ፡፡ ወደዚህ የመጣሁበት ዓላማ ቃለ መጠየቅ ሊደረግለዎት ነው፡፡ መጠይቁ አልካን ጤና ሳይንስ ኮሌጅ የማህበረሰብ አቀፍ ትምህርት ማስተባበሪያ ጽ/ቤት የተዘጋጀ ሲሆን ዓላማውም የህብረተሰቡን አጠቃላይ የጤና ሁኔታ በሚመለከት መረጃ ለመሰብሰብ እና አስፈሊጊውን የመፌትሄ ሃሳብ ለሚመሇከተው ክፍሎች ሇመጠቆም ነው፡፡ በዚህ የዳሰሳ ጥናት ማንኛውም ሰው የመሳተፌ ሆነ
+                ያሇመሳተፌ መብት አሇው ፡፡ በዚህ ጥናት የተገኘው መረጃ ከሊይ ከተጠቀሰው ዓሊማ ውጭ ሇላሊ ተግባር የማይውሌ ሲሆን መረጃው በሙለ በሚስጥር የሚቀመጥ መሆኑን ሌንገሌፅሌዎት እንወዳሇን ፡፡ የዚህ ዳሰሳ ጥናት መሰራት ሇእርስዎ ሆነ ሇማህበረሰቡ ፊይዳ አሇው ፡፡ ይህን መጠየቅ ሞሌቶ ሇመጨረስ 20 ደቂቃ ሉወስድ ይችሊሌ፡፡
+            </p>
+            <p>ስሇዚህ ከሊይ ከገሇፅኩሌዎት ዓሇማና ጥቅም አንፃር ሇቃሇ መጠየቅ እንዲተባበሩኝ በትህትና እጠይቃሇሁ ፡፡</p>
+            <ol class="personal-info">
+                <li class="agreed">
+                    <label for="yes" class="say-yes">ሇቃሇ መጠይቁ ተስማምቻሇሁ </label>
+                    <input type="checkbox" name="agreed" id="yes" required>
+                </li>
+                <li class="agreed">
+                    <label for="city">ከተማ: </label>
+                    <input type="text" name="city" id="city" required>
+                    <label for="kebele">ቀበላ: </label>
+                    <input type="text" name="kebele" id="kebele" required>
+                    <label for="ketena">ቀጠና: </label>
+                    <input type="text" name="ketena" id="ketena" required>
+                    <label for="ketena">የቤት ቁጥር: </label>
+                    <input type="text" name="ketena" id="ketena" required>
+                </li>
+                <li class="agreed">
+                    <label for="started-at" class="say-yes">መጠየቁ የተጀመረበት ስዓት: </label>
+                    <input type="datetime-local" name="started-at" id="started-at">
+                </li>
+                <li class="agreed">
+                    <label for="yeteteyaki-sm" class="say-yes">የተያቂው ተማሪ ስም: </label>
+                    <input type="text" name="yeteteyaki-sm" id="yeteteyaki-sm">
+                </li>
+            </ol>
+            <h1> ክፌሌ1፡ ማህበራዊ ስነ ህዝባዊ ሁኔታ</h1>
+            <table class="kfl1">
+                <thead>
+                    <tr>
+                        <th> ተ.ቁ </th>
+                        <th> የቤተሰብ ስም ዝርዝር </th>
+                        <th> ፆታ </th>
+                        <th> የሃሊፉነት ሁኔታ </th>
+                        <th> ዕድሜ </th>
+                        <th> ሐይማኖት </th>
+                        <th> የት/ደረጃ </th>
+                        <th> የስራ ሁኔታ ከ 7 ዓመት በታችሇሆኑ ወደ መርጫ ቀ5.ሂድ </th>
+                        <th> የጋብቻ ሁኔታ </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><label for="family-1">የቤተሰብ ስም</label>
+                            <input type="text" name="family-1" id="family-1">
+                        </td>
+                        <td>
+                            <label for="sex">ጾታ</label>
+                            <select id="sex" name="sex">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ጾታ</option>
+                        <option value="ወንድ">ወንድ</option>
+                        <option value="ሴት">ሴት</option>
+                       </select>
+                        </td>
+                        <td>
+                            <label for="member-level">የሃሊፉነት ሁኔታ</label>
+                            <select id="member-level" name="member-level">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የሃሊፉነት ሁኔታ</option>
+                        <option value="አባት">አባት (የቤቱባሇቤት)</option>
+                        <option value="እናት">እናት (የቤቱባሇቤት)</option>
+                        <option value="ሌጅ">ሌጅ</option>
+                        <option value="የሌጅ-ሌጅ">የሌጅ ሌጅ</option>
+                         <option value="አያት">አያት</option>
+                         <option value="ላሊ ዘመድ">ላሊ ዘመድ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                        </td>
+                        <td>
+                            <label for="religion">ሃይማኖት</label>
+                            <select name="religion" id="">
+                                <option value="orthodox">ኦርቶዶክስ</option>
+                                <option value="islam">እስልምና</option>
+                                <option value="protestant">ፕሮቴስታንት</option>
+                                <option value="other">ሌላ</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="education-level">የሃሊፉነት ሁኔታ</label>
+                            <select id="education-level" name="education-level">
+                        <option value="የየትምህርት /ደረጃ" disabled selected>የየትምህርት /ደረጃ</option>
+                        <option value="ማንበቡና መፃፌ የማትችሌ/የማይችሌት">ማንበቡና መፃፌ የማትችሌ/የማይችሌ</option>
+                        <option value="እናት">ማንበቡና መፃፌ የምትችሌ/የሚችሌ</option>
+                        <option value="ሌጅ">ከ1-8ኛ ክፌሌ</option>
+                        <option value="የሌጅ-ሌጅ">ከ9-12 ክፌሌ</option>
+                         <option value="አያት">ከ12 በሊይ</option>
+                         <optgroup label="ዕድሜ ከ7 ዓመት በታች">
+                            <option value="">መዋዕሇ ህፃናት ያሌገባ</option>
+                            <option value="">መዋዕሇ ህፃናት /ቄስ/ት/ቤት የሚማር</option>
+                            <option value="">መደበኛ ት/ቤት የሚማር</option>
+                         </optgroup>
+                       </select>
+                        </td>
+                        <td>
+                            <label for="job-status">ስራ ሁኔታ</label>
+                            <select id="job-status" name="job-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ስራ ሁኔታ</option>
+                        <option value="አባት">ግብርና</option>
+                        <option value="እናት">ንድግ</option>
+                        <option value="ሌጅ">የመንግስት ሰራተኛ</option>
+                        <option value="የሌጅ-ሌጅ">የቤት ዕመቤት</option>
+                         <option value="አያት">ሇስራ ያሌደረሰ ከ18 ዓመት በታችሇሆኑት</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች የሆነ ግንየሚሰራ</option>
+                         <option value="ላሊ ዘመድ">ተማሪ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                        </td>
+                        <td>
+                            <label for="marital-status">የጋብቻ ሁኔታ</label>
+                            <select id="marital-status" name="marital-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የጋብቻ ሁኔታ</option>
+                        <option value="አባት">ያሊገባ /ች ከ18 ዓመትበሊይ</option>
+                        <option value="እናት">ያገባ /ች</option>
+                        <option value="ሌጅ">ተጋብተው ሇየብቻ የሚኖሩ</option>
+                        <option value="የሌጅ-ሌጅ">የፇታ/ች</option>
+                         <option value="አያት">የሞተበት /ባት</option>
+                         <option value="ላሊ ዘመድ">ሇጋብቻ ያሌደረሰ/ች ከ18 
+ዓመት በታች</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች ሁና
+ያገባች</option>
+                       </select>
+                        </td>
+                        <td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><label for="family-1">የቤተሰብ ስም</label>
+                            <input type="text" name="family-1" id="family-1">
+                        </td>
+                        <td>
+                            <label for="sex">ጾታ</label>
+                            <select id="sex" name="sex">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ጾታ</option>
+                        <option value="ወንድ">ወንድ</option>
+                        <option value="ሴት">ሴት</option>
+                       </select>
+                        </td>
+                        <td>
+                            <td>
+                                <label for="member-level">የሃሊፉነት ሁኔታ</label>
+                                <select id="member-level" name="member-level">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የሃሊፉነት ሁኔታ</option>
+                        <option value="አባት">አባት (የቤቱባሇቤት)</option>
+                        <option value="እናት">እናት (የቤቱባሇቤት)</option>
+                        <option value="ሌጅ">ሌጅ</option>
+                        <option value="የሌጅ-ሌጅ">የሌጅ ሌጅ</option>
+                         <option value="አያት">አያት</option>
+                         <option value="ላሊ ዘመድ">ላሊ ዘመድ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="religion">ሃይማኖት</label>
+                                <select name="religion" id="">
+                                <option value="orthodox">ኦርቶዶክስ</option>
+                                <option value="islam">እስልምና</option>
+                                <option value="protestant">ፕሮቴስታንት</option>
+                                <option value="other">ሌላ</option>
+                            </select>
+                            </td>
+                            <td>
+                                <label for="education-level">የሃሊፉነት ሁኔታ</label>
+                                <select id="education-level" name="education-level">
+                        <option value="የየትምህርት /ደረጃ" disabled selected>የየትምህርት /ደረጃ</option>
+                        <option value="ማንበቡና መፃፌ የማትችሌ/የማይችሌት">ማንበቡና መፃፌ የማትችሌ/የማይችሌ</option>
+                        <option value="እናት">ማንበቡና መፃፌ የምትችሌ/የሚችሌ</option>
+                        <option value="ሌጅ">ከ1-8ኛ ክፌሌ</option>
+                        <option value="የሌጅ-ሌጅ">ከ9-12 ክፌሌ</option>
+                         <option value="አያት">ከ12 በሊይ</option>
+                         <optgroup label="ዕድሜ ከ7 ዓመት በታች">
+                            <option value="">መዋዕሇ ህፃናት ያሌገባ</option>
+                            <option value="">መዋዕሇ ህፃናት /ቄስ/ት/ቤት የሚማር</option>
+                            <option value="">መደበኛ ት/ቤት የሚማር</option>
+                         </optgroup>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="job-status">ስራ ሁኔታ</label>
+                                <select id="job-status" name="job-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ስራ ሁኔታ</option>
+                        <option value="አባት">ግብርና</option>
+                        <option value="እናት">ንድግ</option>
+                        <option value="ሌጅ">የመንግስት ሰራተኛ</option>
+                        <option value="የሌጅ-ሌጅ">የቤት ዕመቤት</option>
+                         <option value="አያት">ሇስራ ያሌደረሰ ከ18 ዓመት በታችሇሆኑት</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች የሆነ ግንየሚሰራ</option>
+                         <option value="ላሊ ዘመድ">ተማሪ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="marital-status">የጋብቻ ሁኔታ</label>
+                                <select id="marital-status" name="marital-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የጋብቻ ሁኔታ</option>
+                        <option value="አባት">ያሊገባ /ች ከ18 ዓመትበሊይ</option>
+                        <option value="እናት">ያገባ /ች</option>
+                        <option value="ሌጅ">ተጋብተው ሇየብቻ የሚኖሩ</option>
+                        <option value="የሌጅ-ሌጅ">የፇታ/ች</option>
+                         <option value="አያት">የሞተበት /ባት</option>
+                         <option value="ላሊ ዘመድ">ሇጋብቻ ያሌደረሰ/ች ከ18 
+ዓመት በታች</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች ሁና
+ያገባች</option>
+                       </select>
+                            </td>
+                            <td>
+                                <td>3</td>
+                                <td><label for="family-1">የቤተሰብ ስም</label>
+                                    <input type="text" name="family-1" id="family-1">
+                                </td>
+                                <td>
+                                    <label for="sex">ጾታ</label>
+                                    <select id="sex" name="sex">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ጾታ</option>
+                        <option value="ወንድ">ወንድ</option>
+                        <option value="ሴት">ሴት</option>
+                       </select>
+                                </td>
+                                <td>
+                                    <td>
+                                        <label for="member-level">የሃሊፉነት ሁኔታ</label>
+                                        <select id="member-level" name="member-level">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የሃሊፉነት ሁኔታ</option>
+                        <option value="አባት">አባት (የቤቱባሇቤት)</option>
+                        <option value="እናት">እናት (የቤቱባሇቤት)</option>
+                        <option value="ሌጅ">ሌጅ</option>
+                        <option value="የሌጅ-ሌጅ">የሌጅ ሌጅ</option>
+                         <option value="አያት">አያት</option>
+                         <option value="ላሊ ዘመድ">ላሊ ዘመድ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                                    </td>
+                                    <td>
+                                        <label for="religion">ሃይማኖት</label>
+                                        <select name="religion" id="">
+                                <option value="orthodox">ኦርቶዶክስ</option>
+                                <option value="islam">እስልምና</option>
+                                <option value="protestant">ፕሮቴስታንት</option>
+                                <option value="other">ሌላ</option>
+                            </select>
+                                    </td>
+                                    <td>
+                                        <label for="education-level">የሃሊፉነት ሁኔታ</label>
+                                        <select id="education-level" name="education-level">
+                        <option value="የየትምህርት /ደረጃ" disabled selected>የየትምህርት /ደረጃ</option>
+                        <option value="ማንበቡና መፃፌ የማትችሌ/የማይችሌት">ማንበቡና መፃፌ የማትችሌ/የማይችሌ</option>
+                        <option value="እናት">ማንበቡና መፃፌ የምትችሌ/የሚችሌ</option>
+                        <option value="ሌጅ">ከ1-8ኛ ክፌሌ</option>
+                        <option value="የሌጅ-ሌጅ">ከ9-12 ክፌሌ</option>
+                         <option value="አያት">ከ12 በሊይ</option>
+                         <optgroup label="ዕድሜ ከ7 ዓመት በታች">
+                            <option value="">መዋዕሇ ህፃናት ያሌገባ</option>
+                            <option value="">መዋዕሇ ህፃናት /ቄስ/ት/ቤት የሚማር</option>
+                            <option value="">መደበኛ ት/ቤት የሚማር</option>
+                         </optgroup>
+                       </select>
+                                    </td>
+                                    <td>
+                                        <label for="job-status">ስራ ሁኔታ</label>
+                                        <select id="job-status" name="job-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ስራ ሁኔታ</option>
+                        <option value="አባት">ግብርና</option>
+                        <option value="እናት">ንድግ</option>
+                        <option value="ሌጅ">የመንግስት ሰራተኛ</option>
+                        <option value="የሌጅ-ሌጅ">የቤት ዕመቤት</option>
+                         <option value="አያት">ሇስራ ያሌደረሰ ከ18 ዓመት በታችሇሆኑት</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች የሆነ ግንየሚሰራ</option>
+                         <option value="ላሊ ዘመድ">ተማሪ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                                    </td>
+                                    <td>
+                                        <label for="marital-status">የጋብቻ ሁኔታ</label>
+                                        <select id="marital-status" name="marital-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የጋብቻ ሁኔታ</option>
+                        <option value="አባት">ያሊገባ /ች ከ18 ዓመትበሊይ</option>
+                        <option value="እናት">ያገባ /ች</option>
+                        <option value="ሌጅ">ተጋብተው ሇየብቻ የሚኖሩ</option>
+                        <option value="የሌጅ-ሌጅ">የፇታ/ች</option>
+                         <option value="አያት">የሞተበት /ባት</option>
+                         <option value="ላሊ ዘመድ">ሇጋብቻ ያሌደረሰ/ች ከ18 
+ዓመት በታች</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች ሁና
+ያገባች</option>
+                       </select>
+                                    </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><label for="family-1">የቤተሰብ ስም</label>
+                            <input type="text" name="family-1" id="family-1">
+                        </td>
+                        <td>
+                            <label for="sex">ጾታ</label>
+                            <select id="sex" name="sex">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ጾታ</option>
+                        <option value="ወንድ">ወንድ</option>
+                        <option value="ሴት">ሴት</option>
+                       </select>
+                        </td>
+                        <td>
+                            <td>
+                                <label for="member-level">የሃሊፉነት ሁኔታ</label>
+                                <select id="member-level" name="member-level">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የሃሊፉነት ሁኔታ</option>
+                        <option value="አባት">አባት (የቤቱባሇቤት)</option>
+                        <option value="እናት">እናት (የቤቱባሇቤት)</option>
+                        <option value="ሌጅ">ሌጅ</option>
+                        <option value="የሌጅ-ሌጅ">የሌጅ ሌጅ</option>
+                         <option value="አያት">አያት</option>
+                         <option value="ላሊ ዘመድ">ላሊ ዘመድ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="religion">ሃይማኖት</label>
+                                <select name="religion" id="">
+                                <option value="orthodox">ኦርቶዶክስ</option>
+                                <option value="islam">እስልምና</option>
+                                <option value="protestant">ፕሮቴስታንት</option>
+                                <option value="other">ሌላ</option>
+                            </select>
+                            </td>
+                            <td>
+                                <label for="education-level">የሃሊፉነት ሁኔታ</label>
+                                <select id="education-level" name="education-level">
+                        <option value="የየትምህርት /ደረጃ" disabled selected>የየትምህርት /ደረጃ</option>
+                        <option value="ማንበቡና መፃፌ የማትችሌ/የማይችሌት">ማንበቡና መፃፌ የማትችሌ/የማይችሌ</option>
+                        <option value="እናት">ማንበቡና መፃፌ የምትችሌ/የሚችሌ</option>
+                        <option value="ሌጅ">ከ1-8ኛ ክፌሌ</option>
+                        <option value="የሌጅ-ሌጅ">ከ9-12 ክፌሌ</option>
+                         <option value="አያት">ከ12 በሊይ</option>
+                         <optgroup label="ዕድሜ ከ7 ዓመት በታች">
+                            <option value="">መዋዕሇ ህፃናት ያሌገባ</option>
+                            <option value="">መዋዕሇ ህፃናት /ቄስ/ት/ቤት የሚማር</option>
+                            <option value="">መደበኛ ት/ቤት የሚማር</option>
+                         </optgroup>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="job-status">ስራ ሁኔታ</label>
+                                <select id="job-status" name="job-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ስራ ሁኔታ</option>
+                        <option value="አባት">ግብርና</option>
+                        <option value="እናት">ንድግ</option>
+                        <option value="ሌጅ">የመንግስት ሰራተኛ</option>
+                        <option value="የሌጅ-ሌጅ">የቤት ዕመቤት</option>
+                         <option value="አያት">ሇስራ ያሌደረሰ ከ18 ዓመት በታችሇሆኑት</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች የሆነ ግንየሚሰራ</option>
+                         <option value="ላሊ ዘመድ">ተማሪ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="marital-status">የጋብቻ ሁኔታ</label>
+                                <select id="marital-status" name="marital-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የጋብቻ ሁኔታ</option>
+                        <option value="አባት">ያሊገባ /ች ከ18 ዓመትበሊይ</option>
+                        <option value="እናት">ያገባ /ች</option>
+                        <option value="ሌጅ">ተጋብተው ሇየብቻ የሚኖሩ</option>
+                        <option value="የሌጅ-ሌጅ">የፇታ/ች</option>
+                         <option value="አያት">የሞተበት /ባት</option>
+                         <option value="ላሊ ዘመድ">ሇጋብቻ ያሌደረሰ/ች ከ18 
+ዓመት በታች</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች ሁና
+ያገባች</option>
+                       </select>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><label for="family-1">የቤተሰብ ስም</label>
+                            <input type="text" name="family-1" id="family-1">
+                        </td>
+                        <td>
+                            <label for="sex">ጾታ</label>
+                            <select id="sex" name="sex">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ጾታ</option>
+                        <option value="ወንድ">ወንድ</option>
+                        <option value="ሴት">ሴት</option>
+                       </select>
+                        </td>
+                        <td>
+                            <td>
+                                <label for="member-level">የሃሊፉነት ሁኔታ</label>
+                                <select id="member-level" name="member-level">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የሃሊፉነት ሁኔታ</option>
+                        <option value="አባት">አባት (የቤቱባሇቤት)</option>
+                        <option value="እናት">እናት (የቤቱባሇቤት)</option>
+                        <option value="ሌጅ">ሌጅ</option>
+                        <option value="የሌጅ-ሌጅ">የሌጅ ሌጅ</option>
+                         <option value="አያት">አያት</option>
+                         <option value="ላሊ ዘመድ">ላሊ ዘመድ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="religion">ሃይማኖት</label>
+                                <select name="religion" id="">
+                                <option value="orthodox">ኦርቶዶክስ</option>
+                                <option value="islam">እስልምና</option>
+                                <option value="protestant">ፕሮቴስታንት</option>
+                                <option value="other">ሌላ</option>
+                            </select>
+                            </td>
+                            <td>
+                                <label for="education-level">የሃሊፉነት ሁኔታ</label>
+                                <select id="education-level" name="education-level">
+                        <option value="የየትምህርት /ደረጃ" disabled selected>የየትምህርት /ደረጃ</option>
+                        <option value="ማንበቡና መፃፌ የማትችሌ/የማይችሌት">ማንበቡና መፃፌ የማትችሌ/የማይችሌ</option>
+                        <option value="እናት">ማንበቡና መፃፌ የምትችሌ/የሚችሌ</option>
+                        <option value="ሌጅ">ከ1-8ኛ ክፌሌ</option>
+                        <option value="የሌጅ-ሌጅ">ከ9-12 ክፌሌ</option>
+                         <option value="አያት">ከ12 በሊይ</option>
+                         <optgroup label="ዕድሜ ከ7 ዓመት በታች">
+                            <option value="">መዋዕሇ ህፃናት ያሌገባ</option>
+                            <option value="">መዋዕሇ ህፃናት /ቄስ/ት/ቤት የሚማር</option>
+                            <option value="">መደበኛ ት/ቤት የሚማር</option>
+                         </optgroup>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="job-status">ስራ ሁኔታ</label>
+                                <select id="job-status" name="job-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ስራ ሁኔታ</option>
+                        <option value="አባት">ግብርና</option>
+                        <option value="እናት">ንድግ</option>
+                        <option value="ሌጅ">የመንግስት ሰራተኛ</option>
+                        <option value="የሌጅ-ሌጅ">የቤት ዕመቤት</option>
+                         <option value="አያት">ሇስራ ያሌደረሰ ከ18 ዓመት በታችሇሆኑት</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች የሆነ ግንየሚሰራ</option>
+                         <option value="ላሊ ዘመድ">ተማሪ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="marital-status">የጋብቻ ሁኔታ</label>
+                                <select id="marital-status" name="marital-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የጋብቻ ሁኔታ</option>
+                        <option value="አባት">ያሊገባ /ች ከ18 ዓመትበሊይ</option>
+                        <option value="እናት">ያገባ /ች</option>
+                        <option value="ሌጅ">ተጋብተው ሇየብቻ የሚኖሩ</option>
+                        <option value="የሌጅ-ሌጅ">የፇታ/ች</option>
+                         <option value="አያት">የሞተበት /ባት</option>
+                         <option value="ላሊ ዘመድ">ሇጋብቻ ያሌደረሰ/ች ከ18 
+ዓመት በታች</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች ሁና
+ያገባች</option>
+                       </select>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>
+                            <td><label for="family-1">የቤተሰብ ስም</label>
+                                <input type="text" name="family-1" id="family-1">
+                            </td>
+                            <td>
+                                <label for="sex">ጾታ</label>
+                                <select id="sex" name="sex">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ጾታ</option>
+                        <option value="ወንድ">ወንድ</option>
+                        <option value="ሴት">ሴት</option>
+                       </select>
+                            </td>
+                            <td>
+                                <td>
+                                    <label for="member-level">የሃሊፉነት ሁኔታ</label>
+                                    <select id="member-level" name="member-level">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የሃሊፉነት ሁኔታ</option>
+                        <option value="አባት">አባት (የቤቱባሇቤት)</option>
+                        <option value="እናት">እናት (የቤቱባሇቤት)</option>
+                        <option value="ሌጅ">ሌጅ</option>
+                        <option value="የሌጅ-ሌጅ">የሌጅ ሌጅ</option>
+                         <option value="አያት">አያት</option>
+                         <option value="ላሊ ዘመድ">ላሊ ዘመድ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                                </td>
+                                <td>
+                                    <label for="religion">ሃይማኖት</label>
+                                    <select name="religion" id="">
+                                <option value="orthodox">ኦርቶዶክስ</option>
+                                <option value="islam">እስልምና</option>
+                                <option value="protestant">ፕሮቴስታንት</option>
+                                <option value="other">ሌላ</option>
+                            </select>
+                                </td>
+                                <td>
+                                    <label for="education-level">የሃሊፉነት ሁኔታ</label>
+                                    <select id="education-level" name="education-level">
+                        <option value="የየትምህርት /ደረጃ" disabled selected>የየትምህርት /ደረጃ</option>
+                        <option value="ማንበቡና መፃፌ የማትችሌ/የማይችሌት">ማንበቡና መፃፌ የማትችሌ/የማይችሌ</option>
+                        <option value="እናት">ማንበቡና መፃፌ የምትችሌ/የሚችሌ</option>
+                        <option value="ሌጅ">ከ1-8ኛ ክፌሌ</option>
+                        <option value="የሌጅ-ሌጅ">ከ9-12 ክፌሌ</option>
+                         <option value="አያት">ከ12 በሊይ</option>
+                         <optgroup label="ዕድሜ ከ7 ዓመት በታች">
+                            <option value="">መዋዕሇ ህፃናት ያሌገባ</option>
+                            <option value="">መዋዕሇ ህፃናት /ቄስ/ት/ቤት የሚማር</option>
+                            <option value="">መደበኛ ት/ቤት የሚማር</option>
+                         </optgroup>
+                       </select>
+                                </td>
+                                <td>
+                                    <label for="job-status">ስራ ሁኔታ</label>
+                                    <select id="job-status" name="job-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ስራ ሁኔታ</option>
+                        <option value="አባት">ግብርና</option>
+                        <option value="እናት">ንድግ</option>
+                        <option value="ሌጅ">የመንግስት ሰራተኛ</option>
+                        <option value="የሌጅ-ሌጅ">የቤት ዕመቤት</option>
+                         <option value="አያት">ሇስራ ያሌደረሰ ከ18 ዓመት በታችሇሆኑት</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች የሆነ ግንየሚሰራ</option>
+                         <option value="ላሊ ዘመድ">ተማሪ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                                </td>
+                                <td>
+                                    <label for="marital-status">የጋብቻ ሁኔታ</label>
+                                    <select id="marital-status" name="marital-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የጋብቻ ሁኔታ</option>
+                        <option value="አባት">ያሊገባ /ች ከ18 ዓመትበሊይ</option>
+                        <option value="እናት">ያገባ /ች</option>
+                        <option value="ሌጅ">ተጋብተው ሇየብቻ የሚኖሩ</option>
+                        <option value="የሌጅ-ሌጅ">የፇታ/ች</option>
+                         <option value="አያት">የሞተበት /ባት</option>
+                         <option value="ላሊ ዘመድ">ሇጋብቻ ያሌደረሰ/ች ከ18 
+ዓመት በታች</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች ሁና
+ያገባች</option>
+                       </select>
+                                </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><label for="family-1">የቤተሰብ ስም</label>
+                            <input type="text" name="family-1" id="family-1">
+                        </td>
+                        <td>
+                            <label for="sex">ጾታ</label>
+                            <select id="sex" name="sex">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ጾታ</option>
+                        <option value="ወንድ">ወንድ</option>
+                        <option value="ሴት">ሴት</option>
+                       </select>
+                        </td>
+                        <td>
+                            <td>
+                                <label for="member-level">የሃሊፉነት ሁኔታ</label>
+                                <select id="member-level" name="member-level">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የሃሊፉነት ሁኔታ</option>
+                        <option value="አባት">አባት (የቤቱባሇቤት)</option>
+                        <option value="እናት">እናት (የቤቱባሇቤት)</option>
+                        <option value="ሌጅ">ሌጅ</option>
+                        <option value="የሌጅ-ሌጅ">የሌጅ ሌጅ</option>
+                         <option value="አያት">አያት</option>
+                         <option value="ላሊ ዘመድ">ላሊ ዘመድ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="religion">ሃይማኖት</label>
+                                <select name="religion" id="">
+                                <option value="orthodox">ኦርቶዶክስ</option>
+                                <option value="islam">እስልምና</option>
+                                <option value="protestant">ፕሮቴስታንት</option>
+                                <option value="other">ሌላ</option>
+                            </select>
+                            </td>
+                            <td>
+                                <label for="education-level">የሃሊፉነት ሁኔታ</label>
+                                <select id="education-level" name="education-level">
+                        <option value="የየትምህርት /ደረጃ" disabled selected>የየትምህርት /ደረጃ</option>
+                        <option value="ማንበቡና መፃፌ የማትችሌ/የማይችሌት">ማንበቡና መፃፌ የማትችሌ/የማይችሌ</option>
+                        <option value="እናት">ማንበቡና መፃፌ የምትችሌ/የሚችሌ</option>
+                        <option value="ሌጅ">ከ1-8ኛ ክፌሌ</option>
+                        <option value="የሌጅ-ሌጅ">ከ9-12 ክፌሌ</option>
+                         <option value="አያት">ከ12 በሊይ</option>
+                         <optgroup label="ዕድሜ ከ7 ዓመት በታች">
+                            <option value="">መዋዕሇ ህፃናት ያሌገባ</option>
+                            <option value="">መዋዕሇ ህፃናት /ቄስ/ት/ቤት የሚማር</option>
+                            <option value="">መደበኛ ት/ቤት የሚማር</option>
+                         </optgroup>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="job-status">ስራ ሁኔታ</label>
+                                <select id="job-status" name="job-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ስራ ሁኔታ</option>
+                        <option value="አባት">ግብርና</option>
+                        <option value="እናት">ንድግ</option>
+                        <option value="ሌጅ">የመንግስት ሰራተኛ</option>
+                        <option value="የሌጅ-ሌጅ">የቤት ዕመቤት</option>
+                         <option value="አያት">ሇስራ ያሌደረሰ ከ18 ዓመት በታችሇሆኑት</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች የሆነ ግንየሚሰራ</option>
+                         <option value="ላሊ ዘመድ">ተማሪ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="marital-status">የጋብቻ ሁኔታ</label>
+                                <select id="marital-status" name="marital-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የጋብቻ ሁኔታ</option>
+                        <option value="አባት">ያሊገባ /ች ከ18 ዓመትበሊይ</option>
+                        <option value="እናት">ያገባ /ች</option>
+                        <option value="ሌጅ">ተጋብተው ሇየብቻ የሚኖሩ</option>
+                        <option value="የሌጅ-ሌጅ">የፇታ/ች</option>
+                         <option value="አያት">የሞተበት /ባት</option>
+                         <option value="ላሊ ዘመድ">ሇጋብቻ ያሌደረሰ/ች ከ18 
+ዓመት በታች</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች ሁና
+ያገባች</option>
+                       </select>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><label for="family-1">የቤተሰብ ስም</label>
+                            <input type="text" name="family-1" id="family-1">
+                        </td>
+                        <td>
+                            <label for="sex">ጾታ</label>
+                            <select id="sex" name="sex">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ጾታ</option>
+                        <option value="ወንድ">ወንድ</option>
+                        <option value="ሴት">ሴት</option>
+                       </select>
+                        </td>
+                        <td>
+                            <td>
+                                <label for="member-level">የሃሊፉነት ሁኔታ</label>
+                                <select id="member-level" name="member-level">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የሃሊፉነት ሁኔታ</option>
+                        <option value="አባት">አባት (የቤቱባሇቤት)</option>
+                        <option value="እናት">እናት (የቤቱባሇቤት)</option>
+                        <option value="ሌጅ">ሌጅ</option>
+                        <option value="የሌጅ-ሌጅ">የሌጅ ሌጅ</option>
+                         <option value="አያት">አያት</option>
+                         <option value="ላሊ ዘመድ">ላሊ ዘመድ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="religion">ሃይማኖት</label>
+                                <select name="religion" id="">
+                                <option value="orthodox">ኦርቶዶክስ</option>
+                                <option value="islam">እስልምና</option>
+                                <option value="protestant">ፕሮቴስታንት</option>
+                                <option value="other">ሌላ</option>
+                            </select>
+                            </td>
+                            <td>
+                                <label for="education-level">የሃሊፉነት ሁኔታ</label>
+                                <select id="education-level" name="education-level">
+                        <option value="የየትምህርት /ደረጃ" disabled selected>የየትምህርት /ደረጃ</option>
+                        <option value="ማንበቡና መፃፌ የማትችሌ/የማይችሌት">ማንበቡና መፃፌ የማትችሌ/የማይችሌ</option>
+                        <option value="እናት">ማንበቡና መፃፌ የምትችሌ/የሚችሌ</option>
+                        <option value="ሌጅ">ከ1-8ኛ ክፌሌ</option>
+                        <option value="የሌጅ-ሌጅ">ከ9-12 ክፌሌ</option>
+                         <option value="አያት">ከ12 በሊይ</option>
+                         <optgroup label="ዕድሜ ከ7 ዓመት በታች">
+                            <option value="">መዋዕሇ ህፃናት ያሌገባ</option>
+                            <option value="">መዋዕሇ ህፃናት /ቄስ/ት/ቤት የሚማር</option>
+                            <option value="">መደበኛ ት/ቤት የሚማር</option>
+                         </optgroup>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="job-status">ስራ ሁኔታ</label>
+                                <select id="job-status" name="job-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ስራ ሁኔታ</option>
+                        <option value="አባት">ግብርና</option>
+                        <option value="እናት">ንድግ</option>
+                        <option value="ሌጅ">የመንግስት ሰራተኛ</option>
+                        <option value="የሌጅ-ሌጅ">የቤት ዕመቤት</option>
+                         <option value="አያት">ሇስራ ያሌደረሰ ከ18 ዓመት በታችሇሆኑት</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች የሆነ ግንየሚሰራ</option>
+                         <option value="ላሊ ዘመድ">ተማሪ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="marital-status">የጋብቻ ሁኔታ</label>
+                                <select id="marital-status" name="marital-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የጋብቻ ሁኔታ</option>
+                        <option value="አባት">ያሊገባ /ች ከ18 ዓመትበሊይ</option>
+                        <option value="እናት">ያገባ /ች</option>
+                        <option value="ሌጅ">ተጋብተው ሇየብቻ የሚኖሩ</option>
+                        <option value="የሌጅ-ሌጅ">የፇታ/ች</option>
+                         <option value="አያት">የሞተበት /ባት</option>
+                         <option value="ላሊ ዘመድ">ሇጋብቻ ያሌደረሰ/ች ከ18 
+ዓመት በታች</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች ሁና
+ያገባች</option>
+                       </select>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td><label for="family-1">የቤተሰብ ስም</label>
+                            <input type="text" name="family-1" id="family-1">
+                        </td>
+                        <td>
+                            <label for="sex">ጾታ</label>
+                            <select id="sex" name="sex">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ጾታ</option>
+                        <option value="ወንድ">ወንድ</option>
+                        <option value="ሴት">ሴት</option>
+                       </select>
+                        </td>
+                        <td>
+                            <td>
+                                <label for="member-level">የሃሊፉነት ሁኔታ</label>
+                                <select id="member-level" name="member-level">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የሃሊፉነት ሁኔታ</option>
+                        <option value="አባት">አባት (የቤቱባሇቤት)</option>
+                        <option value="እናት">እናት (የቤቱባሇቤት)</option>
+                        <option value="ሌጅ">ሌጅ</option>
+                        <option value="የሌጅ-ሌጅ">የሌጅ ሌጅ</option>
+                         <option value="አያት">አያት</option>
+                         <option value="ላሊ ዘመድ">ላሊ ዘመድ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="religion">ሃይማኖት</label>
+                                <select name="religion" id="">
+                                <option value="orthodox">ኦርቶዶክስ</option>
+                                <option value="islam">እስልምና</option>
+                                <option value="protestant">ፕሮቴስታንት</option>
+                                <option value="other">ሌላ</option>
+                            </select>
+                            </td>
+                            <td>
+                                <label for="education-level">የሃሊፉነት ሁኔታ</label>
+                                <select id="education-level" name="education-level">
+                        <option value="የየትምህርት /ደረጃ" disabled selected>የየትምህርት /ደረጃ</option>
+                        <option value="ማንበቡና መፃፌ የማትችሌ/የማይችሌት">ማንበቡና መፃፌ የማትችሌ/የማይችሌ</option>
+                        <option value="እናት">ማንበቡና መፃፌ የምትችሌ/የሚችሌ</option>
+                        <option value="ሌጅ">ከ1-8ኛ ክፌሌ</option>
+                        <option value="የሌጅ-ሌጅ">ከ9-12 ክፌሌ</option>
+                         <option value="አያት">ከ12 በሊይ</option>
+                         <optgroup label="ዕድሜ ከ7 ዓመት በታች">
+                            <option value="">መዋዕሇ ህፃናት ያሌገባ</option>
+                            <option value="">መዋዕሇ ህፃናት /ቄስ/ት/ቤት የሚማር</option>
+                            <option value="">መደበኛ ት/ቤት የሚማር</option>
+                         </optgroup>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="job-status">ስራ ሁኔታ</label>
+                                <select id="job-status" name="job-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ስራ ሁኔታ</option>
+                        <option value="አባት">ግብርና</option>
+                        <option value="እናት">ንድግ</option>
+                        <option value="ሌጅ">የመንግስት ሰራተኛ</option>
+                        <option value="የሌጅ-ሌጅ">የቤት ዕመቤት</option>
+                         <option value="አያት">ሇስራ ያሌደረሰ ከ18 ዓመት በታችሇሆኑት</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች የሆነ ግንየሚሰራ</option>
+                         <option value="ላሊ ዘመድ">ተማሪ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="marital-status">የጋብቻ ሁኔታ</label>
+                                <select id="marital-status" name="marital-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የጋብቻ ሁኔታ</option>
+                        <option value="አባት">ያሊገባ /ች ከ18 ዓመትበሊይ</option>
+                        <option value="እናት">ያገባ /ች</option>
+                        <option value="ሌጅ">ተጋብተው ሇየብቻ የሚኖሩ</option>
+                        <option value="የሌጅ-ሌጅ">የፇታ/ች</option>
+                         <option value="አያት">የሞተበት /ባት</option>
+                         <option value="ላሊ ዘመድ">ሇጋብቻ ያሌደረሰ/ች ከ18 
+ዓመት በታች</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች ሁና
+ያገባች</option>
+                       </select>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td><label for="family-1">የቤተሰብ ስም</label>
+                            <input type="text" name="family-1" id="family-1">
+                        </td>
+                        <td>
+                            <label for="sex">ጾታ</label>
+                            <select id="sex" name="sex">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ጾታ</option>
+                        <option value="ወንድ">ወንድ</option>
+                        <option value="ሴት">ሴት</option>
+                       </select>
+                        </td>
+                        <td>
+                            <td>
+                                <label for="member-level">የሃሊፉነት ሁኔታ</label>
+                                <select id="member-level" name="member-level">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የሃሊፉነት ሁኔታ</option>
+                        <option value="አባት">አባት (የቤቱባሇቤት)</option>
+                        <option value="እናት">እናት (የቤቱባሇቤት)</option>
+                        <option value="ሌጅ">ሌጅ</option>
+                        <option value="የሌጅ-ሌጅ">የሌጅ ሌጅ</option>
+                         <option value="አያት">አያት</option>
+                         <option value="ላሊ ዘመድ">ላሊ ዘመድ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="religion">ሃይማኖት</label>
+                                <select name="religion" id="">
+                                <option value="orthodox">ኦርቶዶክስ</option>
+                                <option value="islam">እስልምና</option>
+                                <option value="protestant">ፕሮቴስታንት</option>
+                                <option value="other">ሌላ</option>
+                            </select>
+                            </td>
+                            <td>
+                                <label for="education-level">የሃሊፉነት ሁኔታ</label>
+                                <select id="education-level" name="education-level">
+                        <option value="የየትምህርት /ደረጃ" disabled selected>የየትምህርት /ደረጃ</option>
+                        <option value="ማንበቡና መፃፌ የማትችሌ/የማይችሌት">ማንበቡና መፃፌ የማትችሌ/የማይችሌ</option>
+                        <option value="እናት">ማንበቡና መፃፌ የምትችሌ/የሚችሌ</option>
+                        <option value="ሌጅ">ከ1-8ኛ ክፌሌ</option>
+                        <option value="የሌጅ-ሌጅ">ከ9-12 ክፌሌ</option>
+                         <option value="አያት">ከ12 በሊይ</option>
+                         <optgroup label="ዕድሜ ከ7 ዓመት በታች">
+                            <option value="">መዋዕሇ ህፃናት ያሌገባ</option>
+                            <option value="">መዋዕሇ ህፃናት /ቄስ/ት/ቤት የሚማር</option>
+                            <option value="">መደበኛ ት/ቤት የሚማር</option>
+                         </optgroup>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="job-status">ስራ ሁኔታ</label>
+                                <select id="job-status" name="job-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>ስራ ሁኔታ</option>
+                        <option value="አባት">ግብርና</option>
+                        <option value="እናት">ንድግ</option>
+                        <option value="ሌጅ">የመንግስት ሰራተኛ</option>
+                        <option value="የሌጅ-ሌጅ">የቤት ዕመቤት</option>
+                         <option value="አያት">ሇስራ ያሌደረሰ ከ18 ዓመት በታችሇሆኑት</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች የሆነ ግንየሚሰራ</option>
+                         <option value="ላሊ ዘመድ">ተማሪ</option>
+                         <option value="ላሊ ዘመድ">ላሊ ካሇ ይግሇፁ</option>
+                       </select>
+                            </td>
+                            <td>
+                                <label for="marital-status">የጋብቻ ሁኔታ</label>
+                                <select id="marital-status" name="marital-status">
+                        <option value="የሃሊፉነት ሁኔታ" disabled selected>የጋብቻ ሁኔታ</option>
+                        <option value="አባት">ያሊገባ /ች ከ18 ዓመትበሊይ</option>
+                        <option value="እናት">ያገባ /ች</option>
+                        <option value="ሌጅ">ተጋብተው ሇየብቻ የሚኖሩ</option>
+                        <option value="የሌጅ-ሌጅ">የፇታ/ች</option>
+                         <option value="አያት">የሞተበት /ባት</option>
+                         <option value="ላሊ ዘመድ">ሇጋብቻ ያሌደረሰ/ች ከ18 
+ዓመት በታች</option>
+                         <option value="ላሊ ዘመድ">ከ18 ዓመት በታች ሁና
+ያገባች</option>
+                       </select>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>የቤተሰቡ የገቢ ሁኔታ</h2>
+            <label for="income">የቤተሰቡ አመታዊ ገቢ:</label>
+            <input type="text" placeholder="በገንዘብ ወይም ባይነት ይገሇፅ" id="income">
+            <label for="income-source">የገቢ ምንጭ:</label>
+            <input type="text" id="income-source" placeholder="ውርስ">
+            <h2>ክፌሌ 2፡- የአካባቢ ጤና አጠባበቅ</h2>
+            <label for="home">የቤቱ አሰራር: </label>
+            <select name="home" id="home">
+<option value="ከጎረቤት ቤቶች ወይም ከአጥሩ ጋር ተያይዞ የተሰራ">ከጎረቤት ቤቶች ወይም ከአጥሩ ጋር ተያይዞ የተሰራ</option>
+<option value="ከጎረቤት ቤቶች ወይም ከአጥሩ በተወሰነ ርቀት የተሰራ">ከጎረቤት ቤቶች ወይም ከአጥሩ በተወሰነ ርቀት የተሰራ</option>
+            </select>
+            <fieldset>
+                <legend>የመኖሪያ ቤቱ</legend>
+                <label for="no-of-rooms" id="no-of-rooms">የክፍሎች ብዛት፡</label>
+                <input type="number" placeholder="3">
+                <label for="size-of-rooms">የእያንዳንዱ ክፌልች ስፊት በካሬ ሜትር:</label>
+                <input type="number" placeholder="20" id="size-of-rooms">
+                <label for="no-of-people">በቤትውስጥ የሚኖሩ ሰዎች ብዛት:</label>
+                <input type="number" placeholder="5" id="no-of-people">
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="home-clean">የቤቱ ንፅህና</label>
+                <select name="home-clean" id="home-clean">
+            <option value="አጥጋቢ"><em>አጥጋቢ</em> (ወሇለ በጣውሊ ወይም በሲሚንቶ የተሰራ ፣ በቀሊለ መጽዳት የሚችሌ፣ ግድግዳው ሇስሊሳና ቀሇም የተቀባ ፣
+ጣራው ኮርኒስ ያሇው ሆኖ ከአቧራ ፣ከብናኝና ከሚታይ ቆሻሻ የጸዳ)</option>
+<option value="መካከሇኛ">መካከሇኛ(ወሇለ አፇር የሆነ ፣ግድግራው ጭቃ የሆነና ያሌተሰነጣጠቀ ፣ጣራው ኮርኒስ የላሇው ከአቧራ ፣ ከብናኝና ከሚታይ ቆሻሻ የጸዳ)</option>
+                <option value="ዝቅተኛ">ዝቅተኛ(ወሇለ አፇር የሆነ ፣ግድግዳው ጭቃ የሆነና የተሰነጣጠቀ ፣ጣራው ኮርኒስ የላሇው ሆኖ ጥሊሸት ወይም ድር ያሇበት አቧራ ፣ብናኝና ላሊ የሚታይ ቆሻሻ ያሇው)</option>
+        </select>
+                <br>
+                <label for="air-serculation">የአየር ዝውውር</label>
+                <select name="air-serculation" id="air-serculation">
+                    <option value="አጥጋቢ">አጥጋቢ( ሁሇት ና ከዚያ በሊይ አገሌግልት ሰጭ መስኮቶች ያለት ሆኖ የመስኮቶቹ አቀማመጥ ትይዩ ያሌሆነና
+መጥፍ ሽታ የላሇው )</option>
+<option value="መካከሇኛ">መካከሇኛ( አገሌግልት የሚሰጥ አንድ መስኮት ብቻ ያሇው ሆኖ መጥፍ ሽታ የላሇው)</option>
+<option value="ዝቅተኛ">ዝቅተኛ( መስኮት የላሇው ወይም ኖሮት የማይከፇትና መጥፍ ሽታ ያሇው)</option>
+                </select>
+                <br>
+                <label for="home-brightness">የቤቱ የብርሃን ሁኔታ</label>
+                <select name="home-brightness" id="home-brightness" required>
+                    <option value="አጥጋቢ">አጥጋቢ(በየክፌለ ተከፊች መስኮት ያሇው ፣ ሁለም ቦታ ብርሃን የሚደርስና በክፌለ መካከሇኛ ቦታ ሆኖ 12 
+ፉደሊት ያለት ሀረግ ወይም አረፊተነገር ፅፍ ያሇምንም ችግር ማንበብ ከተቻሇ)</option>
+<option value="መካከሇኛ">መካከሇኛ( በመስኮት ወይም በላሊ ክፌት ቦታ ብርሃን ከገባና በሁለም ክፌልች በእኩሌ ሁኔታ ካሌተሰራጨ )</option>
+<option value="ዝቅተኛ">ዝቅተኛ(መስኮት ወይም ላሊ ክፌተት የላሇውና ጨሇማ የሆነ)</option>
+                </select>
+                <br>
+                <label for="animal">በቤት ውስጥ የሚኖር የቤት እንስሳት አሇ</label>
+                <select name="animal" id="animal" required>
+                    <option value="አዎ">አዎ</option>
+                    <option value="የሇም">የሇም</option>
+                </select>
+                <br>
+                <label for="how-animal">አዎ ካለ እንዴት ነው የሚኖሩት</label>
+                <input type="text" id="how-animal" name="how-animal" required>
+            </fieldset>
+            <h2>ሇማብስያ የሚጠቀሙበትን የሀይሌ ምንጭ በተመሇከተ</h2>
+            <label for="kitchen">ከመኖሪያ ቤት የተሇየ ኩሽና ቤት አሇ ?</label>
+            <select name="kitchen" id="kitchen">
+                <option value="አዎ">አዎ</option>
+                <option value="የሇም">የሇም</option>                
+            </select>
+            <br>
+            <label for="open-cheminy">9 ኩሽና ቤቱ ካሇ የጭስ ማስዎጫ ክፌተት አሇው?</label>
+            <select name="open-cheminy" id="open-cheminy">
+                <option value="አዎ">አዎ</option>
+                <option value="የሇም">የሇም</option> 
+            </select>
+            <br>
+            <label for="energy-source">ምግብ ሇማብሰሌ የሚጠቀሙት የሃይሌ ምንጭ ምንድን ነው?</label>
+            <select name="energy-source" id="energy-source">
+                <option value="እንጨትና ኩበት">እንጨትና ኩበት</option>
+            <option value="ቡታጋዝ">ቡታጋዝ</option>
+            <option value="ኤላክትሪክ">ኤላክትሪክ</option>
+            </select>
+            <br>
+            <label for="wood">የማብስያው ሁኔታ እንጨትና ኩበት ከሆነ የሚጠቀሙት የማብስያ ሁኔታ ?</label>
+            <select name="wood" id="wood">
+                <option value="ማገዶ ቆጣቢ ምድጃ">ማገዶ ቆጣቢ ምድጃ</option>
+                <option value="ማገዶ ቆጣቢ ያሌሆነ ምድጃ">ማገዶ ቆጣቢ ያሌሆነ ምድጃ</option>
+            </select>
+            <br>
+            <label for="electric">የሚጠቀሙት ኤላክትሪክ ከሆነ የኤላክትሪክ ገመዱ ያሌተሊጠ ወይም በግድግዳ ውስጥ ሇውስጥ የተዘረጋ ነው?</label>
+            <select name="electric" id="electric">
+<option value="አዎ">አዎ</option>
+            <option value="አይደሇም">አይደሇም</option>
+            </select>
+            <br>
+            <label for="fire-accident">በኩሽና ቤቱ የእሳት አደጋ በቀሊለ ማስነሳት የሚችለ ( ሇምሳላ ጋዝ ወይም ናፌጣ ) ነገሮች ይቀመጣለ?</label>
+            <select name="fire-accident" id="fire-accident">
+    <option value="አዎ">አዎ</option>
+            <option value="አይደሇም">አይደሇም</option>
+</select>
+            <h2>ውሃን በተመሇከተ</h2>
+            <label for="water">ሇቤተሰቡ ግሌጋልት የሚሆነውን ውሃ ከየት ያገኛለ?</label>
+            <select name="water" id="water">
+    <option value="ከቧንቧ">ከቧንቧ</option>
+    <option value="ከተጠበቀ የውሃ ጉድጓድ ">ከተጠበቀ የውሃ ጉድጓድ </option>
+    <option value="ካሌተጠበቀ የውሃ
+ጉድጓድ /ምንጭ">ካሌተጠበቀ የውሃ
+ጉድጓድ /ምንጭ</option>
+<option value="ከወንዝ">ከወንዝ</option>
+</select>
+            <br>
+            <em>ከተጠበቀ የውሃ ጉድጓድ /ምንጭ ማሇት ውሃን ሉበክለ ከሚችለ ነገሮች ማሇትም ከጎርፌ ፣ ከንፊስ ፣ከእንስሳት ከሰዎች ንክኪ የተከሇከሇ ማሇት ነው::</em>
+            <label for="river-water">የውሃ ካሌተጠበቀ ጉድጓድ /ምንጭ ወይም ከወንዝ
+ የሚያገኙ ከሆነ ሇመጠጥነት ከመጠቀመዎ በፉት ምን
+ ያደርጋለ፡?</label>
+            <select name="river-water" id="river-water">
+<option value=" በደንብ አፇሊና አቀዘቅዘዎሇሁ የጽሀይ ብርሃን ባሇበት ቢታ አስቀምጠዎሇሁ"> በደንብ አፇሊና አቀዘቅዘዎሇሁ የጽሀይ ብርሃን ባሇበት ቢታ አስቀምጠዎሇሁ</option>
+<option value="የጽሀይ ብርሃንን ማሳሇፌ በሚችሌ እቃ ውስጥ በማስቀመጥ">የጽሀይ ብርሃንን ማሳሇፌ በሚችሌ እቃ ውስጥ በማስቀመጥ</option>
+<option value="በክልሪን/በውሃ አጋር እክመዋሇሁ">በክልሪን/በውሃ አጋር እክመዋሇሁ</option>
+<option value="ላሊ ካሇ ይግሇጹ">ላሊ ካሇ ይግሇጹ</option>
+ </select>
+            <br>
+            <label for="water-heigen">የመጠጥ ውሃን በቤት ውስጥ እንዴት ያስቀምጣለ</label>
+            <select name="water-heigen" id="water-heigen">
+    <option value="ንጹህ በሆነ ጀሪካን">ንጹህ በሆነ ጀሪካን</option>
+    <option value="ክዳን ባሇው እንስራ">ክዳን ባሇው እንስራ</option>
+    <option value="በበርሜሌ">በበርሜሌ</option>
+    <option value="ላሊ ካሇ ይግሇጹ">ላሊ ካሇ ይግሇጹ</option>
+</select>
+            <br>
+            <label for="water-fetching">ሇመጠጥ የሚሆነውን ውሃ ከማጠራቀሚያው እንዴት ይቀዱታሌ ?</label>
+            <select name="water-fetching" id="water-fetching">
+    <option value="በማንቆርቆር">በማንቆርቆር</option>
+    <option value="በማጥሇቅ">በማጥሇቅ</option>
+</select>
+            <br>
+            <label for="common-jug"></label>
+            <select name="common-jug" id="common-jug">
+    <option value="አሇ">አሇ</option>
+    <option value="የሇም">የሇም</option>
+</select>
+            <br>
+            <label for="no-minute">ውሃን ከምንጩ ሄዶ ሇማምጣት ሇደርሶ መሌስ (የወረፊ ጌዜን ሳይጨምር )የሚወስድብዎ ጌዜ ስንት ነው( በደቂቃ ይቀመጥ ) _</label>
+            <input type="number" id="no-minute" name="no-minute" placeholder="20">
+            <br>
+            <label for="no-litter">0 የውሃ ፌጆታዎ በቀን ምን ያህሌ ሉትር ነው (ሇጠሊ ዝግጅት የሚውሇውን አይጨምርም )</label>
+            <input type="number" id="no-litter" name="no-litter" placeholder="40">
+            <h2>የምግብ ዝግጅት ፣ ንፅህናና ደህንነት በተመሇከተ</h2>
+            <label for="dish-wash">የምግብ ዕቃዎችን በምን ያጥባለ?</label>
+            <select name="dish-wash" id="dish-wash">
+                <option value="በውሃ ብቻ ሇ">በውሃ ብቻ ሇ</option>
+                <option value=" በሳሙናና በውሃ ብቻ"> በሳሙናና በውሃ ብቻ</option>
+                <option value="ላሊ">ላሊ</option>
+            </select>
+            <br>
+
+            <label for="dish-drying"> የታጠብ ዕቃዎችን በምን ያደርቃለ ?</label>
+            <select name="dish-drying" id="dish-drying">
+            <option value="">በመወሌወያ ጨርቅ</option>
+            <option value="ማንጠፌጠፉያ ሊይ በማስቀመጥ በአየር እንዲደርቅ በማድረግ">ማንጠፌጠፉያ ሊይ በማስቀመጥ በአየር እንዲደርቅ በማድረግ</option>
+            </select>
+
+            <br>
+            <label for="dish-placing">ታጥበው የደረቁ የምግብ ዕቃዎችንና
+ ምግብ የት ያስቀምጣለ ?</label>
+            <select name="dish-placing" id="dish-placing">
+    <option value="በወሇሌ ወይም በደረጃ ሊይ">በወሇሌ ወይም በደረጃ ሊይ</option>
+    <option value="ከእንጨትና ከጭቃ በተሠራ መደርደሪያ ሊይ">ከእንጨትና ከጭቃ በተሠራ መደርደሪያ ሊይ</option>
+    <option value="በዘመናዊ መሌኩ በተሰራ በተዘጋጀ ቡፋ">በዘመናዊ መሌኩ በተሰራ በተዘጋጀ ቡፋ</option>
+ </select>
+            <br>
+            <label for="food-placing"> ሇበሰለና ሊሌበሰለ ምግቦች የተሇያየ ማስቀመጫ ፣ መክተፉያ ጣውሊና ቢሇዋ ይጠቀማለ ?</label>
+            <select name="food-placing" id="food-placing"> 
+    <option value="እጠቀማሇሁ">እጠቀማሇሁ</option>
+    <option value="አሌጠቀምም">አሌጠቀምም</option>
+</select>
+            <br>
+            <label for="leftover-food">የተረፇ ምብግ በድጋሚ ይጠቀማለ</label>
+            <select name="leftover-food" id="leftover-food">
+    <option value="እጠቀማሇሁ">እጠቀማሇሁ</option>
+    <option value="አሌጠቀምም">አሌጠቀምም</option>
+</select>
+            <br>
+            <label for="leftover-food-yes">የተረፇ ምብግ በድጋሚ የሚጠቀሙ ከሆነ በደንብ ያሞቁታሌ ?</label>
+            <select name="leftover-food-yes" id="leftover-food-yes">
+    <option value="አዎ">አዎ</option>
+    <option value="የሇም">የሇም</option>
+</select>
+            <br>
+            <label for="with-dihariya">ተቅማጥ ፣ሳሌ፣የእጅ ቁስሌ ወይም ላልች በሽታዎች እያለብዎት ምግብ ያዘጋጃለ ?</label>
+            <select name="with-dihariya" id="with-dihariya">
+                <option value="አዎ">አዎ</option>
+                <option value="የሇም">የሇም</option>
+             </select>
+            <br>
+            <label for="touch-nose">ምግብ እያዘጋጁቆዳዎትን ፣አፌንጫዎትን ወይም ጆሮዎትን በጣትዎ ይነካለ ?</label>
+            <select name="touch-nose" id="touch-nose">
+                <option value="አዎ">አዎ</option>
+                <option value="የሇም">የሇም</option>
+             </select>
+            <br>
+            <label for="cut-nail">ምግብ ሲያዘጋጁ ፀጉርዎትን ይሸፌናለ ፣የእጅዎን ጥፌር ያሳጥራለ ፣ የሇበሱትን ጌጣጌጥ ያወሌቃለ ?</label>
+            <select name="cut-nail" id="cut-nail">
+                <option value="አዎ">አዎ</option>
+                <option value="የሇም">የሇም</option>
+             </select>
+            <label for="wash-hand">እጅዎትን መቸመቸ ይታጠባለ
+ (ከአንድ በሊይ መሌስ ይቻሊሌ)</label>
+            <label for="before-cook">ከምግብ ዝግጅት በፉት</label>
+            <input type="checkbox" name="wash-hand" id="before-cook">
+            <label for="after-heign">ህፃናጽን ካፀዳዳሁ በኋሊ</label>
+            <input type="checkbox" name="wash-hand" id="after-heign">
+            <label for="after-toilet">ከሽንት ቤት መሌስ </label>
+            <input type="checkbox" name="wash-hand" id="after-toilet">
+            <label for="after-touch">ቆዳየን ፣አፌንጫየን ፣ጆሮየን ሇነካሁ በኋሊ</label>
+            <input type="checkbox" name="wash-hand" id="after-touch">
+            <label for="touch-money">ብርና ላልች ቁሳቁሶችን ሇነካሁ በኋሊ</label>
+            <input type="checkbox" name="wash-hand" id="touch-money">
+            <label for="wash-hand-with">እጅዎን በምን ይታጠባለ ?</label>
+            <select name="wash-hand-with" id="wash-hand-with">
+    <option value="በሳሙናና በውሃ">በሳሙናና በውሃ</option>
+    <option value="በውሃ ብቻ">በውሃ ብቻ</option>
+    <option value="ላሊ ካሇ ይጠቀስ">ላሊ ካሇ ይጠቀስ</option>
+    <option value="ላሊ ካሇ ይጠቀስ">ላሊ ካሇ ይጠቀስ</option>
+</select>
+            <h2>መፀዳጃ ቤትን በተመሇከተ</h2>
+            <label for="dry-garbage">የግቢ ደረቅ ቆሻሻ በሚመሇከት?</label>
+            <select name="dry-garbage" id="dry-garbage">
+    <option value="በግቢ ውስጥ በተቆፇረ ጉድጓድ">በግቢ ውስጥ በተቆፇረ ጉድጓድ</option>
+    <option value="በመበተን ጉድጓድ">በመበተን ጉድጓድ</option>
+    <option value="ሇጓሮ አትክሌት">ሇጓሮ አትክሌት</option>
+    <option value="ከግቢ ውጭ በተቆፇረ">ከግቢ ውጭ በተቆፇረ</option>
+    <option value="ሜዳ ሊይ ">ሜዳ ሊይ </option>
+    <option value="በማዘጋጃ ቤት">በማዘጋጃ ቤት</option>
+    <option value="ላሊ ካሇ (ይጥቀሱ)">ላሊ ካሇ (ይጥቀሱ)</option>
+</select>
+            <label for="temp-garbage-bin">ክዳን ያሇው ጌዜያዊ የደረቅ ቆሻሻ ማጠራቀሚያ አሇ?</label>
+            <select name="temp-garbage-bin" id="temp-garbage-bin">
+    <option value="አዎ">አዎ</option>
+    <option value="የሇም">የሇም</option>
+</select>
+            <label for="averall-cpd-heign"> የግቢ አጠቃሊይ ንፅህና ምን ይመስሊሌ?</label>
+            <select name="averall-cpd-heign" id="averall-cpd-heign">
+    <option value="ንፅህ ነው">ንፅህ ነው</option>
+    <option value="ንፅህና ይጎድሇዋሌ">ንፅህና ይጎድሇዋሌ</option>
+ </select>
+            <!-- //intentional skiped 2.46 check it out -->
+            <label for="bouching-place">የእንስሳት እርድ የሚካሄደው የት ነው ?</label>
+            <select name="bouching-place" id="bouching-place">
+    <option value="ቄራ">ቄራ</option>
+    <option value="ከግቢ /ቤት ውስጥ">ከግቢ /ቤት ውስጥ</option>
+    <option value="ሜዳ ሊይ">ሜዳ ሊይ</option>
+    <option value="ላሊ ካሇ (ይጥቀሱ) ">ላሊ ካሇ (ይጥቀሱ) </option>
+  </select>
+            <h2>ክፌሌ 3 ፡ የእናቶችን እና የህፃናትን ጤና በተመሇከተ</h2>
+            <h2>የህፃናትን ጤና በተመሇከተ</h2>
+            <label for="adult-female"> በቤተሰቡ ውስጥ በመውሇድ እድሜ ክሌሌ (15-49አመት) ውስጥ የሚገኙ ሴቶች ብዛት</label>
+            <input type="number" name="adult-female" id="adult-female" min="0" required placeholder="4">
+            <label for="maried-at">አግብተው ሇሚያውቁ ሴቶች መጀመሪያ ሲያገቡ /ጎጆ ሲወጡ የነበራችው እድሜ</label>
+            <input type="number" required min="0" placeholder="23" id="maried-at" name="maried-at">
+            <label for="pregnant-women">በቤተሰብ ውስጥ በአሁን ጌዜ ያለ ነፌሰጡር እናተቶች ብዛት (ከላሇ 0 ተብል ይሞሊሌ)</label>
+            <input type="number" min="0" id="pregnant-women" name="pregnant-women" placeholder="1">
+            <!-- ነፌሰጡር እናተቶች ካለ የቅድመ ወሉድ ምርመራ በመከታተሌ ሊይ ያለ ብዛት -->
+            <label for="pregnacy-checkup">ነፌሰጡር እናተቶች ካለ የቅድመ ወሉድ ምርመራ በመከታተሌ ሊይ ያለ ብዛት</label>
+            <input type="number" id="pregnacy-checkup" name="pregnacy-checkup" required min="0" placeholder="1">
+            <label for="pregnacy-checkup-reason">ምርመራ የሚያደርጉ ነፌሰጡሮች 
+ካለ የእያንዳንዳቸው ምክንያት
+ምንድን ነው</label>
+            <select name="pregnacy-checkup-reason" id="pregnacy-checkup-reason">
+    <option value="ጥቅም እንዳሇው ስሇሚያውቁ">ጥቅም እንዳሇው ስሇሚያውቁ</option>  
+    <option value="ስሇማይፇሌጉ">ስሇማይፇሌጉ</option>
+    <option value=" እንዳሇ ስሇማያውቁ"> እንዳሇ ስሇማያውቁ</option>
+    <option value="የጤና ድርጅት በቅርቡ አሇመኖሩ ">የጤና ድርጅት በቅርቡ አሇመኖሩ </option>
+    <option value="የጤና ባሇሙያዎች በቂ እንክብካቤ ስሇማያደርጉ">የጤና ባሇሙያዎች በቂ እንክብካቤ ስሇማያደርጉ</option>
+    <option value="ላሊ ባሇ ይግሇፅ">ላሊ ባሇ ይግሇፅ</option>
+
+</select>
+            <label for="cuase-of-desease">አሁን ነፌሰጡር ከሆኑ እናቶች ያሊችው የጤና ችግር ምንድን ነው?</label>
+            <input type="text" id="cuase-of-desease" name="cuase-of-desease" required>
+            <label for="first-birth-age"> የወሇዱ ሴቶች የመጀመሪያ ሌጅ ሲወሌዱ የነበራችው እድሜ </label>
+            <input type="number" id="first-birth-age" min="0" required placeholder="18">
+            <label for="happened-abortion">በቤተሰብ ውስጥ ካለ ሴቶች ባሇፇው አንድ አመት ውርጃ አጋጥሞ ያውቃሌ</label>
+            <select name="happened-abortion" id="happened-abortion">
+                <option value=" አዎ"> አዎ</option>
+                <option value="የሇም ">የሇም </option>
+             </select>
+            <label for="no-abortion">መሌስዎ አወ ከሆነ ስንት ጌዜ አጋጥሟቸዋሌ </label>
+            <input type="number" required id="no-abortion" name="no-abortion" placeholder="1" min="0">
+            <label for="no-maternal-dith">በቤተሰቡ ውስጥ በወሉድ ምክንያት ባሇፇው አንድ አመት የሞቱ እናቶች ብዛት</label>
+            <input type="number" id="no-maternal-dith" name="no-maternal-dith" required placeholder="0" min="0">
+            <label for="no-mothers-age-five">በቤተሰቡ ውስጥ እድሜያቸው አምስት አመት ያሌሞሊው ሌጅ ያሊቸው እናቶች ብዛት _</label>
+            <input type="number" min="0" required id="no-mothers-age-five" name="no-mothers-age-five" placeholder="1">
+            <label for="home-birth">ከእያንዳንዱ እናት ባሇፇው እንድ አመት ከተወሇዱ ህፃናት ውስጥ
+በቤት ውስጥ የተገሊገለ ካለ ብዛት</label>
+            <input type="number" required id="home-birth" name="home-birth" min="0" placeholder="0">
+            <label for="hospital-birth">ከእያንዳንዱ እናት ባሇፇው እንድ አመት ከተወሇዱ ህፃናት ውስጥ በጤና ድርጅት የተገሊገለ ካለ ብዛት</label>
+            <input type="number" id="hospital-birth" name="hospital-birth" required min="0" placeholder="1">
+            <label for="reason-for-home-birth">በቤት ውስጥ የተገሊገለ ካለ በቤት ውስጥ የመገሊገሊችው ምክንያት ምንድን ነው</label>
+            <input type="text" required>
+            <label for="no-twin-birth">ባሇፇው አንድ አመት መንትያ የወሇዱ ሴቶች ብዛት</label>
+            <input type="number" id="no-twin-birth" name="no-twin-birth" min="0" required placeholder="0">
+            <label for="no-operation-birth">ባሇፇው አንድ አመት በሆድ ቀዶ ህክምና የተገሊገለ እናቶች ብዛት</label>
+            <input type="number" id="no-operation-birth" name="no-operation-birth" min="0" required placeholder="0">
+            <label for="after-birth-checkup">ከወሇዱ በኃሊ የድህረ ወሉድ ክትትሌ አድርገው ያውቃለ (6ወር በታች ህፃናት ሊሊችው እናቶች)</label>
+            <input type="number" id="after-birth-checkup" name="after-birth-checkup" required min="0" placeholder="1">
+            <label for="after-birth-checkup-no">የላይኛው ጥያቄ መሌስዎ የሇም ከሆነ ምክንያትዎ ምንድን ነበረ</label>
+            <input type="text" id="after-birth-checkup-no" name="after-birth-checkup-no" required>
+            <h2>የቤተሰብ ዕቅድ በተመሇከተ (በቤተሰቡ ውስጥ ያለ ያገቡ ወይም የወሇዱ ሴቶች ብቻ የሚመሇከት)</h2>
+            <label for="have-other-child">ተጨማሪ ሌጅ መውሇድ ይፇሌጋለ ?</label>
+            <label for="have-other-child-1">እፇሌጋሇሁ (አሁኑን)</label>
+            <input type="radio" name="have-other-child" id="have-other-child-1">
+            <label for="have-other-child-2"> እፇሌጋሇሁ ነገር ግን (ከ--------------- ዓመት በኃሊ)</label>
+            <input type="radio" name="have-other-child" id="have-other-child-2">
+            <label for="have-other-child-3">አሌፇሌግም</label>
+            <input type="radio" name="have-other-child" id="have-other-child-3">
+            <label for="konow-controled-bith"> አራርቆ ሇመውሌድ የሚያስችለ ዘዴዎች እንዳለ ያውቃለ?</label>
+            <select name="konow-controled-bith" id="konow-controled-bith">
+                <option value="አዎ">አዎ</option>
+                <option value="የሇም">የሇም</option>
+                 </select>
+            <label for="yes-konow-controled-bith"></label>
+            <input type="text" name="yes-konow-controled-bith" id="yes-konow-controled-bith" required> <label for="use-birth-control">በአሁኑ ስዓት የእርግዝና መከሊከያ ተጠቅመው ያውቃለ?</label>
+            <select name="use-birth-control" id="use-birth-control">
+                <option value=" አዎ"> አዎ</option>
+                <option value="የሇም">የሇም</option>
+             </select>
+            <label for="yes-use-birth-control">አዎ ካለ የትኞቹን የእርግዝና መከሊከያ ዘዴ ይጠቅማለ</label>
+            <input type="text" name="yes-use-birth-control" id="yes-use-birth-control" required>
+            <label for="no-use-birth-control">አሌጠቀምም ካለ ሇምን ?</label>
+            <select name="no-use-birth-control" id="no-use-birth-control">
+    <option value=" ስሇማይፇሌጉ"> ስሇማይፇሌጉ</option>
+    <option value="የጤና ችግር ስሇሚያስከትሌ">የጤና ችግር ስሇሚያስከትሌ</option>
+    <option value=" ስሇማይገኝ"> ስሇማይገኝ</option>
+    <option value="ውድ ስሇሆነ">ውድ ስሇሆነ</option>
+    <option value="ሃይማኖት ስሇማይፇቅድ">ሃይማኖት ስሇማይፇቅድ</option>
+    <option value="ባላ /ጓደኛÀ ስሇሚቃወም">ባላ /ጓደኛÀ ስሇሚቃወም</option>
+    <option value="ህመምተኛ ስሇሆንኩ">ህመምተኛ ስሇሆንኩ</option>
+    <option value="ላሊ (ይጥቀሱ)">ላሊ (ይጥቀሱ)</option>
+</select>
+            <label for="future-use-birth-control"> ወደ ፉት ሇመጠቀም ሀሳብ አሇዎት ? </label>
+            <select name="future-use-birth-control" id="future-use-birth-control">
+    <option value="አዎ">አዎ </option>
+    <option value="የሇም">የሇም</option>
+ </select>
+            <h2>የህፃናት እና የእናቶችን ክትባት በተመሇከተ</h2>
+            <label for="no-infant-vaccine">እድሜያችው አንድ አመት ካሌሞሊችው ህፃናት ውስጥ ክትባት የተከተቡት ስንት ናችው</label>
+            <input type="number" id="no-infant-vaccine" name="no-infant-vaccine" required min="0">
+            <label for="no-infant-vaccine-with-card">ከተከተቡት መካከሌ የክትባት ካርድ ያሊችው ስንት ናቸው (በምሌከታ አረጋግጥ /ጭ)</label>
+            <input type="number" min="0" id="no-infant-vaccine-with-card" name="no-infant-vaccine-with-card" required>
+            <!-- የክትባት ካርድ ሊሊቸው ህፃናት የክትባት ሁኔታ ይመዝገብ -->
+            <p>የክትባት ካርድ ሊሊቸው ህፃናት የክትባት ሁኔታ ይመዝገብ</p>
+            <label for="bcg-vaccine">ቢሲጂ</label>
+            <input type="number" id="bcg-vaccine" name="bcg-vaccine" required min="0">
+            <label for="polio-vaccine">ፖሉዩ</label>
+            <input type="number" id="polio-vaccine" name="polio-vaccine" required min="0">
+            <label for="pentavalent-vaccine">ፔንታቫሇንት</label>
+            <input type="number" id="pentavalent-vaccine" name="pentavalent-vaccine" required min="0">
+            <label for="pcv-vaccine">ፒሲቪ</label>
+            <input type="number" id="pcv-vaccine" name="pcv-vaccine" required min="0">
+            <label for="rota-vaccine">ሮታ</label>
+            <input type="number" id="rota-vaccine" name="rota-vaccine" required min="0">
+            <label for="kufgn-vaccine">  ኩፌኝ</label>
+            <input type="number" id="kufgn-vaccine" name="kufgn-vaccine" required min="0">
+            <label for="mengagakolf-vaccine">በቤተሰብ ውስጥ እድሜያችው 15-49 አመት ከሆኑ ሴቶች የመንጋጋ ቆሌፌ መከሊከያ የተከተቡ ብዛት</label>
+            <input type="number" id="mengagakolf-vaccine" name="mengagakolf-vaccine" required min="0">
+            <label for="from-mengagakolf-vaccine">ከተከተቡት ሴቶች ውስጥ 1-5 ጌዜ የወሰዱት ስንት ናችው</label>
+            <input type="number" id="from-mengagakolf-vaccine" name="from-mengagakolf-vaccine" required min="0">
+            <label for="one-time-mengagakolf-vaccine">1ጌዜ_</label>
+            <input type="number" id="one-time-mengagakolf-vaccine" name="one-time-mengagakolf-vaccine" required min="0">
+            <label for="two-times-mengagakolf-vaccine">2ጌዜ_</label>
+            <input type="number" id="two-times-mengagakolf-vaccine" name="two-times-mengagakolf-vaccine" required min="0">
+            <label for="three-times-mengagakolf-vaccine">3ጌዜ_</label>
+            <input type="number" id="three-times-mengagakolf-vaccine" name="three-times-mengagakolf-vaccine" required min="0">
+            <label for="four-times-mengagakolf-vaccine">4ጌዜ_</label>
+            <input type="number" id="four-times-mengagakolf-vaccine" name="four-times-mengagakolf-vaccine" required min="0">
+            <label for="five-times-mengagakolf-vaccine">5ጌዜ_</label>
+            <input type="number" id="five-times-mengagakolf-vaccine" name="five-times-mengagakolf-vaccine" required min="0">
+            <label for="pregnant-mengagakolf-vaccine">በቤተሰብ ውስጥ ካለት ነፌሰጡሮች የመንጋጋ ቆሌፌ መከሊከያ የተከተብ ብዛት</label>
+            <input type="number" id="pregnant-mengagakolf-vaccine" name="pregnant-mengagakolf-vaccine" required min="0">
+            <h2>የህፃናትና የሌጆችን ህመም የሚመሇከቱ ጥያቂዎች</h2>
+            <label for="sick-under-five">በቤተሰብ ውስጥ ከ5 አመት እድሜ በታች ካለት ህፃናት ባሇፈት ሁሇት ሳምንታት የታመሙ ነበሩ ?</label>
+            <select name="sick-under-five" id="sick-under-five">
+                <option value="አዎ ስንት_______ ">አዎ ስንት_______ </option>
+                <option value=" የሇም"> የሇም</option>
+            </select>
+            <label for="yes-sick-under-five">አዎ ካለ እያንዳንዳቸው የህመማቸው ሁኔታ ይግሇፁ? </label>
+            <textarea name="yes-sick-under-five" id="yes-sick-under-five"></textarea>
+            <label for="of-under-five">በቤት ውስጥ ከሚገኙት ከ5 አመት
+በታች ካለትህፃናት መካከሌ</label>
+            <select name="of-under-five" id="of-under-five">
+    <option value="አንቃር /እንጥሌ የተቆረጠሊቸው ስንት ናቸው">አንቃር /እንጥሌ የተቆረጠሊቸው ስንት ናቸው</option>
+    <option value="ግግ የወጣሊቸው ስንት ናቸው">ግግ የወጣሊቸው ስንት ናቸው</option>
+    <option value="ቅንድብ የተቀነደበሊቸው ስንት ናቸው">ቅንድብ የተቀነደበሊቸው ስንት ናቸው</option>
+    <option value="ከሴቶች ስንት ተገርዘዋሌ">ከሴቶች ስንት ተገርዘዋሌ</option>
+</select>
+            <label for="in-14-days-diharea">በቤተሰብ ውስጥ ካለት 14 ቀናት ውስጥ ተቅማጥ የያዛችው ሌጆች ነበሩ ?</label>
+            <select name="in-14-days-diharea" id="in-14-days-diharea">
+    <option value=" አዎ ስንት_______ "> አዎ ስንት_______ </option>
+    <option value=" የሇም"> የሇም</option>
+</select>
+            <label for="treatment-for-diharea">ተቅማጥ የያዘው ሰው የሚደረግሇት ምንድን ነው?</label>
+            <select name="treatment-for-diharea" id="treatment-for-diharea">
+    <option value="ፇሳሽ እንዲወስዱ ያደረጋሌ ">ፇሳሽ እንዲወስዱ ያደረጋሌ </option>
+    <option value="ኦአር ኤስ እንዲወስዱ ይደረጋሌ">ኦአር ኤስ እንዲወስዱ ይደረጋሌ</option>
+    <option value="ላሊ ካሇ (ይጥቀሱ)_">ላሊ ካሇ (ይጥቀሱ)_</option>
+</select>
+            <label for="reason-take-ors">ኦአር ኤስ እንዲወስዱ የሚያደርጉ ከሆነ ምክንያትዎ ምንድን ነው ?</label>
+            <select name="reason-take-ors" id="reason-take-ors">
+    <option value="ጥቅሙን ባሇማወቅ ">ጥቅሙን ባሇማወቅ </option>
+    <option value="ሇመግዛት ባሇመቻሌ">ሇመግዛት ባሇመቻሌ</option>
+    <option value="ስሇማይገኝ ">ስሇማይገኝ </option>
+    <option value="ላሊ ካሇ ይግሇፁ___">ላሊ ካሇ ይግሇፁ___</option>
+</select>
+            <h2>ክፌሌ 4፡ የተሇያዩ ህብረተሰቡን የሚመሇከቱ የጤና መረጃዎች </h2>
+            <p>ባሇፈት 2 ሳምንታት በቤተሰቡ የታመሙ ወይም በህክምና ክትትሌ ያለ ሰዎች ቁጥር ( ከ5 አመት በታች ያለ ህፃናትና እናቶችንም ይጨምራሌ )</p>
+            <label for="p1-desease-type">የግለሰብ 1 የበሽታ አይነት</label>
+            <input type="text" id="p1-desease-type" name="p1-desease-type" required>
+            <label for="p1-sex-desease">የግለሰብ 1 ፆታ</label>
+            <select name="p1-sex-desease" id="p1-sex-desease">
+                <option value="ወንድ">ወንድ</option>
+                <option value="ሴት">ሴት</option>
+            </select>
+            <label for="p2-age-for-desease">የግለሰብ 2 እድሜ</label>
+            <input type="number" id="p2-age-for-desease" name="p2-age-for-desease" min="0">
+            <label for="p2-desease-type">የግለሰብ 2 የበሽታ አይነት</label>
+            <input type="text" id="p2-desease-type" name="p2-desease-type">
+            <label for="p2-sex-desease">የግለሰብ 2 ፆታ</label>
+            <select name="p1-sex-desease" id="p2-sex-desease">
+                <option value="ወንድ">ወንድ</option>
+                <option value="ሴት">ሴት</option>
+            </select>
+            <label for="p3-age-for-desease">የግለሰብ 3 እድሜ</label>
+            <input type="number" id="p3-age-for-desease" name="p3-age-for-desease" min="0">
+            <label for="p3-desease-type">የግለሰብ 3 የበሽታ አይነት</label>
+            <input type="text" id="p3-desease-type" name="p3-desease-type">
+            <label for="p3-sex-desease">የግለሰብ 3 ፆታ</label>
+            <select name="p3-sex-desease" id="p3-sex-desease">
+                <option value="ወንድ">ወንድ</option>
+                <option value="ሴት">ሴት</option>
+            </select>
+            <label for="p4-age-for-desease">የግለሰብ 4 እድሜ</label>
+            <input type="number" id="p4-age-for-desease" name="p4-age-for-desease" min="0">
+            <label for="p4-desease-type">የግለሰብ 4 የበሽታ አይነት</label>
+            <input type="text" id="p4-desease-type" name="p4-desease-type">
+            <label for="p4-sex-desease">የግለሰብ 4 ፆታ</label>
+            <select name="p4-sex-desease" id="p4-sex-desease">
+                <option value="ወንድ">ወንድ</option>
+                <option value="ሴት">ሴት</option>
+            </select>
+            <label for="p4-age-for-desease">የግለሰብ 4 እድሜ</label>
+            <input type="number" id="p4-age-for-desease" name="p4-age-for-desease" min="0">
+            <h2>ከቤተሰብዎ መካከሌ የአካሌ መጉደሌ የደረሰባችው ካለ ብዛት ( ሇምሳላ የእጅ፣የእግር፣የጀሮ፣የአእምሮ ወዘተ)</h2>
+            <label for="p1-disability-type">የግለሰብ 1 የአካሌ ጉዳት አይነት</label>
+            <input type="text" id="p1-disability-type" name="p1-disability-type">
+            <label for="p1-sex-disability">የግለሰብ 1 ፆታ</label>
+            <select name="p1-sex-disability" id="p1-sex-disability">
+                <option value="ወንድ">ወንድ</option>
+                <option value="ሴት">ሴት</option>
+            </select>
+            <label for="p1-age-for-disability">የግለሰብ 1 እድሜ</label>
+            <input type="number" id="p1-age-for-disability" name="p1-age-for-disability" min="0">
+            <label for="p2-disability-type">የግለሰብ 2 የአካሌ ጉዳት አይነት</label>
+            <input type="text" id="p2-disability-type" name="p2-disability-type">
+            <label for="p2-sex-disability">የግለሰብ 2 ፆታ</label>
+            <select name="p2-sex-disability" id="p2-sex-disability">
+                <option value="ወንድ">ወንድ</option>
+                <option value="ሴት">ሴት</option>
+            </select>
+            <label for="p2-age-for-disability">የግለሰብ 2 እድሜ</label>
+            <input type="number" id="p2-age-for-disability" name="p2-age-for-disability" min="0">
+            <label for="p3-disability-type">የግለሰብ 3 የአካሌ ጉዳት አይነት</label>
+            <input type="text" id="p3-disability-type" name="p3-disability-type">
+            <label for="p1-sex-disability">የግለሰብ 3 ፆታ</label>
+            <select name="p3-sex-disability" id="p3-sex-disability">
+                <option value="ወንድ">ወንድ</option>
+                <option value="ሴት">ሴት</option>
+            </select>
+            <label for="p3-age-for-disability">የግለሰብ 3 እድሜ</label>
+            <input type="number" id="p3-age-for-disability" name="p3-age-for-disability" min="0">
+            <label for="medicated-at">በቤተሰብዎ ሇሚደርስብዎ የጤና ችግር መፌትሄ የሚሹት መጀመሪያ በአብዛኛው ከየት ነው</label>
+            <select name="medicated-at" id="medicated-at">
+    <option value="ከጤና ድርጅት">ከጤና ድርጅት</option>
+    <option value="ከባህሊዊ ህክምና">ከባህሊዊ ህክምና</option>
+    <option value=" ከጠመሌ"> ከጠመሌ</option>
+    <option value=" ከጠንቋይ"> ከጠንቋይ</option>
+</select>
+            <h2>የመድሀኒት አጠቃቀምን በተመሇከተ</h2>
+            <label for="get-medicine-at">የህመም ስሜት ሲሰማዎት የሚያስፇሌገዎትን መድሀኒት የሚያገኑት ከየት ነው ?</label>
+            <select name="get-medicine-at" id="get-medicine-at">
+                <option value="ከመድሀኒት ቤት">ከመድሀኒት ቤት</option>
+                <option value="ከሱቅ">ከሱቅ</option>
+                <option value="ከባህሌ መድሀኒት ቤት">ከባህሌ መድሀኒት ቤት</option>
+                <option value="ላሊ ሰው ከታዘዘሇት">ላሊ ሰው ከታዘዘሇት</option>
+            </select>
+            <label for="medicated-properly">በጤና ባሇሙያ የታዘዘሌዎትን መድሀኒት በተወሰነ ስዓትና ጊዜ ይወስዳለ?</label>
+            <select name="medicated-properly" id="medicated-properly">
+                <option value="አዎ">አዎ</option>
+                <option value="አሌወስድም">አሌወስድም</option>
+                <option value="በድሀኒት ታዝዞሌኝ አያውቅም">በድሀኒት ታዝዞሌኝ አያውቅም</option>
+            </select>
+            <label for="consiquence-of-bad-medication"> </label>
+            <select name="consiquence-of-bad-medication" id="consiquence-of-bad-medication">
+                <option value="ከበሽታ አሇመፇወስ">ከበሽታ አሇመፇወስ</option>
+                <option value="በሽታው በድሀኒቱን መሇማመድ">በሽታው በድሀኒቱን መሇማመድ</option>
+                <option value="በሽታው ማገርሸት">በሽታው ማገርሸት</option>
+                <option value="ምንም ችግር አያመጣም">ምንም ችግር አያመጣም</option>
+                </select>
+            <label for="traditional-medicine">የባህሊዊ መድሀኒት ተጠቅመው ያውቃለ ?</label>
+            <select name="traditional-medicine" id="traditional-medicine">
+    <option value="አዎ">አዎ</option>
+    <option value="አሊውቅም">አሊውቅም</option>
+</select>
+            <h2>የአእምሮ ሁኔታ በተመሇከተ </h2>
+            <label for="heared-about-mental-desease">ስሇ አዕምሮ ህመም ሰምተው ያውቃለ?</label>
+            <select name="heared-about-mental-desease" id="heared-about-mental-desease">
+                <option value="አዎ">አዎ</option>
+                <option value="አሊውቅም">አሊውቅም</option>
+            </select>
+            <label for="know-about-mental-problem">የአዕምሮ ህመም በምን ምክንያት እንደሚመጣ ያውቃለ ?</label>
+            <select name="know-about-mental-problem" id="know-about-mental-problem">
+                 <option value="አዎ">አዎ</option>
+                <option value="አሊውቅም">አሊውቅም</option>
+                 </select>
+            <label for="think-metal-desease-cominicable">የአዕምሮ ህመም ከሰው ወደ ሰው ይተሊሇፊሌ ብሇው ያስባለ?</label>
+            <select name="think-metal-desease-cominicable" id="think-metal-desease-cominicable">
+                    <option value="አዎ">አዎ</option>
+                <option value="አሊውቅም">አሊውቅም</option>
+                 </select>
+            <label for="exist-mentaly-ill-person">በቤተሰብ ውስጥ የአዕምሮ ህመም ያሇበት ሰው አሇ (የሚጥሌ በሽታ ጨምሮ)</label>
+            <select name="exist-mentaly-ill-person" id="exist-mentaly-ill-person">
+                    <option value="አዎ">አዎ</option>
+                <option value="አሊውቅም">አሊውቅም</option>
+                 </select>
+            <label for="think-mental-illness-curable">የአዕምሮ ህመም የሚታከም ህመም ነው ብሇው ያምናለ ? </label>
+            <select name="think-mental-illness-curable" id="think-mental-illness-curable">
+               <option value="አዎ">አዎ</option>
+                <option value="አሊውቅም">አሊውቅም</option> 
+            </select>
+            <label for="family-mental-illness-medicated-at">የአዕምሮ ህመም በቤተሰብ ወይም በህብረተሰቡ
+ቢኖር የት ሄደው መታከም አሇበት ይሊለ?</label>
+            <select name="family-mental-illness-medicated-at" id="family-mental-illness-medicated-at">
+    <option value="ጤና ተቋም">ጤና ተቋም</option>
+    <option value="ፀልት ቤት/ የእምነት ተቋም">ፀልት ቤት/ የእምነት ተቋም</option>
+    <option value="ጠንቋይ ቤት">ጠንቋይ ቤት</option>
+    <option value="የባህሌ መድሀኒት ቤት">የባህሌ መድሀኒት ቤት</option>
+    <option value="ላሊ ካሇ ይግሇፁ">ላሊ ካሇ ይግሇፁ</option>
+</select>
+            <label for="exist-drug-user"> ቤተሰብ ውስጥ (እንደ አሌኮሌ፣ጫት፣ሲጋራ፣ሽሻ) የሚጠቀም አሇ ?</label>
+            <select name="exist-drug-user" id="exist-drug-user">
+    <option value="አዎ ካለ ይግሇፁ">አዎ ካለ ይግሇፁ</option>
+<option value="የሇም">የሇም</option>
+</select>
+            <label for="think-drug-dangerous">ሱስ አምጪ ነገሮች እንደ ጫት ፣ሲጋራ፣ሽሻ አሌኮሌና ላልችም የአዕምሮ ህመም ያመጣለ ብሇው ያስባለ? </label>
+            <select name="think-drug-dangerous" id="think-drug-dangerous">
+    <option value="አዎ">አዎ</option>
+    <option value="አሊስብም">አሊስብም</option>
+</select>
+            <h2>የአይን ህመም በተመሇከተ </h2>
+            <label for="konw-tracoma">የአይን ማዝ (ትራኮማ) በሽታ ምን እንደሆነ ያውቃለ?</label>
+            <select name="konw-tracoma" id="konw-tracoma">
+            <option value="አዎ">አዎ</option>
+            <option value="አሊውቅም">አሊውቅም</option>
+         </select>
+            <label for="yes-know-tracoma-reason">መሌስዎ አወ ከሆነ የአይን ማዝ (ትራኮማ) በሽታ መተሊሇፉያ መንገዱ ምንድን ነው?</label>
+            <select name="yes-know-tracoma-reason" id="yes-know-tracoma-reason">
+                <option value="የአባባቢ ንፅህና መጓደሌ ">የአባባቢ ንፅህና መጓደሌ </option>
+                <option value="የግሌ ንፅህና አሇመጠበቅ">የግሌ ንፅህና አሇመጠበቅ</option>
+                <option value="በበሽታው ከተያሀ ሰው ጋር ንክኪ በመፌጠር">በበሽታው ከተያሀ ሰው ጋር ንክኪ በመፌጠር</option>
+                <option value="በዝንብ አማካኝናት">በዝንብ አማካኝናት</option>
+                <option value="ላሊ ካሇ ይግሇፁ">ላሊ ካሇ ይግሇፁ</option>
+            </select>
+            <label for="think-control-tracoma">የአይን ማዝ (ትራኮማ) በሽታን መከሊከሌ ይቻሊሌ ብሇው ያምናለ</label>
+            <select name="think-control-tracoma" id="think-control-tracoma">
+    <option value="አዎ ">አዎ </option>
+    <option value="አይቻሌም">አይቻሌም</option>
+    <option value="አሊውቅም">አሊውቅም</option>
+</select>
+            <label for="yes-think-control-tracoma">መሌስዎ አወ ከሆነ በምን መንገድ መከሊከሌ
+ይቻሊሌ (ከአንድ በሊይ መሌስ ካሇ ያክቡት )</label>
+            <select name="yes-know-tracoma-reason" id="yes-know-tracoma-reason">
+    <option value="የግሌና የአባባቢ ንፅህና በመጠበቅ">የግሌና የአባባቢ ንፅህና በመጠበቅ</option>
+    <option value="ዘመናዊ ህክምና በመውሰድ">ዘመናዊ ህክምና በመውሰድ</option>
+    <option value="ባህሊዊ ህክምና በመውሰድ">ባህሊዊ ህክምና በመውሰድ</option>
+    <option value="በራሱ ጌዜ ስሇሚድን ሇተወሰነ ቀናት ዝም ብል ማየት">በራሱ ጌዜ ስሇሚድን ሇተወሰነ ቀናት ዝም ብል ማየት</option>
+</select>
+            <label for="exist-tracoma-victim">በቤትውስጥ በትራኮማ የተጠቃ ሰው አሇ?</label>
+            <select name="exist-tracoma-victim" id="exist-tracoma-victim">
+    <option value="አዎ ስንት">አዎ ስንት</option>
+    <option value="የሇም">የሇም</option>
+</select>
+            <h2>ክፌሌ 5 የአመጋገብ ሁኔታን የሚዳስስ መጠይቅ </h2>
+            <p>የእናት አመጋገብ ሁኔታ ( ከአንድ በሊይ 15-49 አመት ያሊችው እናቶች ካለ አንዷን በእጣ ምረጥ)</p>
+            <br>
+            <p>የደም ማነስ ስሜ አሇብዎት?(ከአንድ በሊይ መምረጥ ይቻሊሌ)</p>
+            <label for="not-seeing-clearly"> የአይን ቭዥታ</label>
+            <input type="radio" name="exis-symptom-of-nemonea" id="not-seeing-clearly">
+            <label for="ear-defening">የጆሮ ጩኽት</label>
+            <input type="radio" name="exis-symptom-of-nemonea" id="ear-defening">
+            <label for="headache">እራስ ማዞር</label>
+            <input type="radio" name="exis-symptom-of-nemonea" id="headache">
+            <label for="lausia">በቀሊለ መድከም</label>
+            <input type="radio" name="exis-symptom-of-nemonea" id="lausia">
+            <label for="heart-desease">በእንቅስቃሴ ወቅት ጌዜ የሌብ ምት መጨመር </label>
+            <input type="radio" name="exis-symptom-of-nemonea" id="heart-desease">
+            <label for="no-symptom">.የሇም</label>
+            <input type="radio" id="no-symptom" name="exis-symptom-of-nemonea">
+            <label for="write-symptom">ላሊ (ይጠቀስ)</label>
+            <input type="radio" id="write-symptom" name="exis-symptom-of-nemonea">
+            <label for="symptom-of-nemonea">የደም ማነስ ምሌክት አሇባችው ( በማየት የሚመሇስ )</label>
+            <select name="symptom-of-nemonea" id="symptom-of-nemonea">
+    <option value="ውስጠኛው የአይን ቆብ መገርጣት">ውስጠኛው የአይን ቆብ መገርጣት</option>
+    <option value="የእጅ መፃፌ መገርጣት">የእጅ መፃፌ መገርጣት</option>
+    <option value="የሇም">የሇም</option>
+    <option value="ላሊ (ይጠቀስ)">ላሊ (ይጠቀስ)</option>
+</select>
+            <label for="lack-of-iron-in-prignancy">በርግዝነዎ ወቅት የአይረን /ብረት ንጥረ ነገር አግኝተዋሌ (ባሇፈት 2 አመት ውስጥ ሇወሇዱ እና አሁን ነፌሰጡር
+ሇሆኑ እናቶች የሚጠየቅ )</label>
+            <select name="lack-of-iron-in-prignancy" id="lack-of-iron-in-prignancy">
+    <option value="አዎ">አዎ</option>
+    <option value="የሇም">የሇም</option>
+</select>
+            <label for="yes-lack-of-iron-in-prignancy">አዎ ካለ ሇምን ያክሌ ጌዜ ወሰዱ(በቀናት)</label>
+            <input type="number" name="yes-lack-of-iron-in-prignancy" id="yes-lack-of-iron-in-prignancy" min="0">
+            <label for="no-eat-in-pregnancy">ነፌስጡር ሲሆን በቀን ስንት ጌዜ ይመገባለ ? (ባሇፈት 2 አመት ወይም አሁን ነፌሰጡር ሇሆች እናት)</label>
+            <input type="number" id="no-eat-in-pregnancy" name="no-eat-in-pregnancy" min="0">
+            <label for="no-eat-while-breast-feeding">በሚያጠቡበት ወቅት በቀን ስንት ጌዜ ይመገባለ ? (ባሇፈት 2 አመት ወይም አሁን ሇምታጠባ እናት ) </label>
+            <input type="number" id="no-eat-while-breast-feeding" name="no-eat-while-breast-feeding" min="0">
+            <label for="type-of-food-no-pregnancy">በእርግዝና ወቅት የሚይመገቡት ምግብ አሇ(ባሇፈት 2 አመት ወይም አሁን ነፌሰጡር ሇሆኑ እናት )</label>
+            <select name="type-of-food-no-pregnancy" id="type-of-food-no-pregnancy">
+                <option value="አዎ(ይጠቀስ)">አዎ(ይጠቀስ)</option>
+                <option value="ሇም">የሇም</option>
+            </select>
+            <label for="type-of-while-breast-feeding">ጡት በሚያጠቡበት ወቅት የሚይመገቡት ምግብ አሇ? (ባሇፈት 2 አመት ወይም አሁን ሇምታጠባ እናት )</label>
+            <select name="type-of-while-breast-feeding" id="type-of-while-breast-feeding">
+                 <option value="አዎ(ይጠቀስ)">አዎ(ይጠቀስ)</option>
+                <option value="ሇም">የሇም</option>
+            </select>
+            <h2> የህፃናት የአመጋገብ ሁኔታ ( ከሁሇት አመት በታች ከአንድ በሊይ ህፃን ካሇ በእድሜ ትነሹን ውሰድ/ጂ)</h2>
+            <label for="start-breast-feeding-since">ሌጅዎትን ጡት ማጥባት የጀመሩ መቼ ነው?</label>
+            <select name="start-breast-feeding-since" id="start-breast-feeding-since">
+                <option value="ወዲያው እንደተወሇደ/ች (በአንድ ስዓት ውስጥ) ">ወዲያው እንደተወሇደ/ች (በአንድ ስዓት ውስጥ)</option>
+                <option value="ከተወሇደ/ች (ከአንድ ስዓት በኃሊ)">ከተወሇደ/ች (ከአንድ ስዓት በኃሊ)</option>
+                <option value=" ጡት አሌጠባም /እም"> ጡት አሌጠባም /እም</option>
+            </select>
+            <label for="feed-other-than-breast-after-birth">ጡት ከማጥባትዎ በፉት ሇሌጂዎ እንደተወሇደ /ች የሰጡት /ጧት ነገር አሇ</label>
+            <select name="feed-other-than-breast-after-birth" id="feed-other-than-breast-after-birth">
+                <option value="አዎ ">አዎ</option>
+                <option value="የሇም"> የሇም</option>
+            </select>
+            <label for="give-the-first-breast">ሇሌጅዎ የመጀመሪያውን ጡት ወተት/አንገር ሰጥተውታሌ</label>
+            <select name="give-the-first-breast" id="give-the-first-breast">
+    <option value="አዎ ">አዎ </option>
+    <option value="">የሇም</option>
+</select>
+            <label for="feed-only-breast">ሌጅዎትን ጡት ብቻ አጥብተዋሌ</label>
+            <select name="feed-only-breast" id="feed-only-breast">
+    <option value="አዎ">አዎ</option>
+    <option value="የሇም">የሇም</option>
+</select>
+            <label for="how-long-feed-only-breast">ሇምን ያህሌ ጌዜ ጡት ብቻ አጠቡት/ቧት (ውሃን ሳይጨምር) (በወር)</label>
+            <input type="number" name="how-long-feed-only-breast" id="how-long-feed-only-breast" min="0">
+            <label for="no-wash-childs-hand-in-day">በአማካኝ ሇጅዎን በቀን ስንት ጌዜ ያጠቡታሌ /ቧታሌ?</label>
+            <input type="number" id="no-wash-childs-hand-in-day" class="no-wash-childs-hand-in-day" min="0">
+            <label for="start-feed-food-at">ሇሌጅዎት ተጨማሪ ምግብ መስጠት የጀመሩ መቼ ነው? በወር</label>
+            <input type="number" id="start-feed-food-at" name="start-feed-food-at" min="0">
+            <label for="not-feeding-food">አሁን ጡት ብቻነውየሚጠባው ካለ ወደ ስንት ወሩ/ሯ ነው</label>
+            <input type="number" id="not-feeding-food" name="not-feeding-food" min="0">
+            <label for="type-food-given-first">በመጀመሪያ ምንአይነት ምግብ ነው የተሰጠው/ጣት?</label>
+            <select id="type-food-given-first" name="type-food-given-first">
+                <option value="ፇሳሽ ምግብ አጥሚት">ፇሳሽ ምግብ አጥሚት</option>
+                <option value="ወፇር ያለ ፇሳሽ ምግቦች/ገንፍ">ወፇር ያለ ፇሳሽ ምግቦች/ገንፍ</option>
+                <option value="ቤተሰብ የሚመገበውን">ቤተሰብ የሚመገበውን</option>
+            </select>
+            <label for="type-of-dish-for-baby">ሇሌጅዎ ተጨማሪ ምግብ የሚሰጡበት ዕቃ ምን አይነት ነው?</label>
+            <select name="type-of-dish-for-baby" id="type-of-dish-for-baby">
+                <option value="ጡጦ">ጡጦ</option>
+                <option value="ስኒ/ማንኪያ">ስኒ/ማንኪያ</option>
+                <option value="ላሊ_____">ላሊ_____</option>
+            </select>
+            <label for="still-breast-feeding">አሁን ሇጅዎን ጡት ያጠቡታሌ?</label>
+            <select name="still-breast-feeding" id="አሁን ሇጅዎን ጡት ያጠቡታሌ?">
+                <option value="አዎ ">አዎ </option>
+                <option value="የሇም">የሇም</option>
+            </select>
+            <label for="no-month-breast-feeding">ሇምን ያህሌ ጌዜ አጠቡት ? በወር</label>
+            <input type="number" name="no-month-breast-feeding" id="no-month-breast-feeding" min="0">
+            <label for="muacm">የሊይኛው ክንድ መሃሌ ዙሪያ ስፊረት(MUAC) ሳ.ሜ </label>
+            <input type="number" name="muacm" id="muacm" min="0">
+            <label for="baby-age">የሌጁ/ጇ እድሜ(ወር)</label>
+            <input type="number" id="baby-age" name="baby-age" min="0">
+            <label for="baby-weight">የሌጁ/ጇ ክብደት</label>
+            <input type="number" id="baby-weight" name="baby-weight" min="0">
+            <label for="baby-height">የሌጁ/ጇ ቁመት ሴ.ሜ</label>
+            <input type="number" id="baby-height" name="baby-height" min="0">
+            <label for="scratch-on-both-legs">ሁለም እግር ሊይ እብጠት አሇው (በማየት የሚመሇስ)</label>
+            <select name="scratch-on-both-legs" id="scratch-on-both-legs">
+                <option value="አዎ">አዎ</option>
+                <option value="የሇም">የሇም</option>
+            </select>
+            <label for="type-of-salt">ቤት ውስጥ ምን አይነት ጨው ይጠቀማለ?</label>
+            <select name="type-of-salt" id="type-of-salt">
+                <option value="አሞላ ጨው">አሞላ ጨው</option>
+                <option value=" አይወዲን የላሇው ጨው"> አይወዲን የላሇው ጨው</option>
+                <option value="አይወዲን ያላው ጨው">አይወዲን ያላው ጨው</option>
+            </select>
+            <label for="use-salt-at">ጨውን መቼ ነው የሚጠቀሙት?</label>
+            <select name="use-salt-at" id="use-salt-at">
+                <option value="ወጥ በሚሰራበት ጌዜ">ወጥ በሚሰራበት ጌዜ</option>
+                <option value="ወጥ ከተሰራ በኋሊ">ወጥ ከተሰራ በኋሊ</option>
+            </select>
+            <label for="place-salt-at">ወጥ ከተሰራ በኋሊ</label>
+            <select name="place-salt-at" id="place-salt-at">
+                <option value=" በክፌት እቃ "> በክፌት እቃ </option>
+                <option value="በተከደነ እቃ">በተከደነ እቃ</option>
+            </select>
+        </form>
+    </section>
+</body>
+
+</html>

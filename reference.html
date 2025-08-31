@@ -1,0 +1,22 @@
+<label for="question">Choose an option:</label>
+<select id="question" name="question" onchange="toggleOtherInput(this)">
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+  <option value="option3">Option 3</option>
+  <option value="other">Other</option>
+</select>
+
+<!-- Hidden input for "Other" -->
+<input type="text" id="otherInput" name="otherInput" placeholder="Please specify" style="display:none; margin-top:5px;" />
+
+<script>
+    function toggleOtherInput(selectElement) {
+        const otherInput = document.getElementById('otherInput');
+        if (selectElement.value === 'other') {
+            otherInput.style.display = 'block';
+        } else {
+            otherInput.style.display = 'none';
+            otherInput.value = ''; // Clear previous text if hidden
+        }
+    }
+</script>

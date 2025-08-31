@@ -1,0 +1,22 @@
+ String started_at = request.getParameter("started-at");
+		String city = request.getParameter("city");
+		String kebele = request.getParameter("kebele");
+		String ketena = request.getParameter("ketena");
+		String no_home = request.getParameter("no-home");
+		String interviwee_name = request.getParameter("interviwee-name");
+
+
+
+
+        //sql
+        INSERT INTO `cbtpalkan`.`interviewee`
+(`id`,
+`interviewer_id`,
+`interviewee_name`,
+`city`,
+`kebele`,
+`ketena`,
+`no_home`,
+`created_at`)
+VALUES
+(?,?,?,?,?,?,?,?);

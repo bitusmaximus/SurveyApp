@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        option,
+        select,
+        input {
+            border-color: azure;
+            width: 80%;
+            border-width: 1px;
+            height: max-content;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 5px;
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(153, 152, 159);
+            caret-color: lavender;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(2, 134, 19);
+        }
+        
+        textarea {
+            width: 80%;
+            height: 100px;
+            border-width: 1px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: lighter;
+            font-size: x-small;
+        }
+        
+        option {
+            text-wrap: wrap;
+            border-width: 1px;
+        }
+        
+        body {
+            background-color: rgb(17, 6, 6);
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: lighter;
+            font-optical-sizing: auto;
+            color: rgb(251, 251, 251);
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        .section1,
+        .section2,
+        .section3,
+        .section4,
+        .section5 {
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(253, 254, 254);
+            background: firebrick;
+        }
+        
+        label {
+            background-color: rgb(114, 129, 129);
+        }
+        
+        #sbt {
+            float: right;
+            width: 75px;
+            height: 40px;
+            font-size: 1.1em;
+            justify-content: center;
+            align-content: space-around;
+            border-radius: 17px;
+            text-align: center;
+        }
+        
+        #sbt:active {
+            float: right;
+            width: 75px;
+            height: 40px;
+            font-size: 1.1em;
+            justify-content: center;
+            align-content: space-around;
+            border-radius: 17px;
+            text-align: center;
+            background-color: greenyellow;
+        }
+        
+        ul {
+            background-color: rgb(41, 42, 43);
+        }
+        
+        p {
+            color: rgb(129, 157, 222);
+        }
+        
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+        }
+        
+        #logo {
+            font-size: 2em;
+        }
+        
+        .shater {
+            font-size: 1.1em;
+            text-overflow: ellipsis;
+        }
+        
+        .shater:active {
+            font-size: 1.1em;
+            background-color: rgb(87, 199, 87);
+            color: aliceblue;
+        }
+        
+        input:active {
+            font-size: 1.1em;
+            background-color: rgb(181, 189, 181);
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <li>
+                <img src="autumn-colors-at-maroon-bells-and-lake-dszc.jpg" alt="alkan collage logo">
+                <div id="logo">አልካን ጤና ሳይንስ ኮሌጅ</div>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <ul>
+            <li>
+                <h1 class="main-header">የማህበረሰብ አቀፍ ትምህርት መረጃ ማሰባሰቢያ መጠይቅ /Questionnaire /</h1>
+                <p>
+                    ይህ መጠይቅ በአልካን ጤና ሳይንስ ኮሌጅ የማህበረሰብ አቀፍ ትምህርት ማስተባበሪያ ጽ/ቤት የተዘጋጀ ነው። ዓላማውም የህብረተሰቡን አጠቃላይ የጤና ሁኔታ በሚመለከት መረጃ ለመሰብሰብ እና አስፈሊጊውን የመፍትሄ ሃሳብ ለሚመለከተው ክፍሎች ለመጠቆም ነው፡፡ በዚህ የዳሰሳ ጥናት ማንኛውም ሰው የመሳተፍ ሆነ ያለመሳተፍ መብት አለው ፡፡ በዚህ ጥናት የተገኘው መረጃ ከላይ ከተጠቀሰው ዓላማ ውጭ ለሌላ ተግባር
+                    የማይውል ሲሆን መረጃው በሙሉ በሚስጥር የሚቀመጥ መሆኑን ልንገልፅልዎት እንወዳላን ፡፡ የዚህ ዳሰሳ ጥናት መሰራት ለእርስዎ ሆነ ለማህበረሰቡ ፋይዳ አለው ፡፡ ይህን መጠየቅ ሞሌቶ ለመጨረስ 20 ደቂቃ ሊወስድ ይችላል፡፡
+                </p>
+                <p>ስለዚህ ከላይ ከተገለጸው ዓላማና ጥቅም አንፃር ለቃለ መጠየቅ እንዲተባበሩን በትህትና እንጠይቃን፡፡</p>
+            </li>
+        </ul>
+        <form action="surveySubmition" class="survey" method="post">
+            <section id="">
+                <fieldset>
+                    <ul id="interviewee">
+                        <li class="class-yes">
+                            <label for="yes" class="say-yes">ለቃለ መጠይቁ ተስማምቻለሁ </label>
+                            <input type="checkbox" name="agreed" id="yes">
+                        </li>
+                        <li class="class-city">
+                            <label for="city">ከተማ: </label>
+                            <input type="text" name="city" id="city">
+                        </li>
+                        <li class="class-kebele">
+                            <label for="kebele">ቀበሌ: </label>
+                            <input type="text" name="kebele" id="kebele">
+                        </li>
+                        <li class="class-ketena">
+                            <label for="ketena">ቀጠና: </label>
+                            <input type="text" name="ketena" id="ketena">
+                        </li>
+                        <li class="no-home">
+                            <label for="no-home">የቤት ቁጥር: </label>
+                            <input type="text" name="no-home" id="no-home">
+                        </li>
+                        <li class="class-started-at">
+                            <label for="started-at">መጠየቁ የተጀመረበት ስዓት: </label>
+                            <input type="datetime-local" name="started-at" id="started-at">
+                        </li>
+                        <li>
+                            <label for="interviwee-name" class="say-yes">የተጠያቂው ተማሪ ስም: </label>
+                            <input type="text" name="interviwee-name" id="class-interviwee-name">
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+            <input type="button" value="ክፍል 1፡ ማህበራዊ ስነ ህዝባዊ ሁኔታ" class="shater" id="shater1">
+            <section id="section1" style="display: none;">
+                <fieldset>
+                    <input type="button" value="+" id="btn-socio_population">
+                    <h3> ማህበራዊ ስነ ህዝባዊ ሁኔታ</h3>
+                    <ul id="socio_population">
+                        <li id="li-family-1-name">
+                            <label for="family-1-name">የቤተሰብ ስም </label>
+                            <input type="text" name="family-1-name" id="family-1-name">
+                        </li>
+                        <li id="li-family-1-sex">
+                            <label for="family-1-sex">ጾታ</label>
+                            <select id="family-1-sex" name="family-1-sex">
+                          <option value="ወንድ">ወንድ</option>
+                          <option value="ሴት">ሴት</option>
+                        </select>
+                        </li>
+                        <li class="class-family-1-member-level">
+                            <label for="family-1-member-level">የሃላፊነት ሁኔታ</label>
+                            <select id="family-1-member-level" name="family-1-member-level" onchange="ffamily1MemberLevel(this)">
+                              <option value=" አባት">አባት (የቤቱባለቤት)</option>
+                              <option value="እናት">እናት (የቤቱባለቤት)</option>
+                              <option value="ልጅ">ሌጅ</option>
+                              <option value="የልጅ-ልጅ ">የልጅ-ልጅ</option>
+                              <option value="አያት">አያት</option>
+                              <option value="ሌላ ዘመድ ">ላሊ ዘመድ</option>
+                              <option value="other"> ሌላ ዘመድ ካለ ይግለጹ </option>
+                            </select>
+                            <input type="text" name="h_family_1_member_level" id="h_family_1_member_level" style="display:none;">
+                        </li>
+                        <li class="class-family-1-religion">
+                            <label for="family-1-religion">ሃይማኖት</label>
+                            <select name="family-1-religion" id="family-1-religion" onchange="ffamily1Religion(this)">
+                            <option value="ኦርቶዶክስ">ኦርቶዶክስ</option>
+                            <option value="እስልምና">እስልምና</option>
+                            <option value="ፕሮቴስታንት">ፕሮቴስታንት</option>
+                            <option value="other">ሌላ</option>
+                        </select>
+                            <input type="text" name="hfamily-1-religion" id="hfamily-1-religion" style="display:none;">
+                        </li>
+                        <li class="class-family-1-education-level">
+                            <label for="family-1-education-level">የትምህርት ደረጃ</label>
+                            <select id="family-1-education-level" name="family-1-education-level">
+                          <option value="ማንበብና መፃፍ የማትችል/የማይችል">ማንበብና መፃፍ የማትችል/የማይችል</option>
+                          <option value="ማንበብና መፃፍ የምትችል/የሚችል">ማንበብና መፃፍ የምትችል/የሚችል</option>
+                          <option value="ከ1-8ኛ ክፍል">ከ1-8ኛ ክፍል</option>
+                          <option value="የከ9-12ኛ ክፍል">ከ9-12ኛ ክፍል</option>
+                          <option value="ከ12 በላይ">ከ12 በላይ</option>
+                          <optgroup label="ዕድሜ ከ7 ዓመት በታች">
+                            <option value="መዋዕለ ህፃናት ያልገባ">መዋዕለ ህፃናት ያልገባ</option>
+                            <option value="መዋዕለ ህፃናት /ቄስ/ት/ቤት የሚማር">መዋዕለ ህፃናት /ቄስ/ት/ቤት የሚማር</option>
+                            <option value="መደበኛ ት/ቤት የሚማር">መደበኛ ት/ቤት የሚማር</option>
+                          </optgroup>
+                       </select>
+                        </li>
+                        <li class="class-family-1-job-status">
+                            <label for="family-1-job-status">ስራ ሁኔታ</label>
+                            <select id="family-1-job-status" name="family-1-job-status">
+                          <option value="ግብርና">ግብርና</option>
+                          <option value="ንድግ">ንድግ</option>
+                          <option value="የመንግስት ሰራተኛ">የመንግስት ሰራተኛ</option>
+                          <option value="የቤት ዕመቤ">የቤት ዕመቤት</option>
+                          <option value="ለስራ ያልደረሰ ከ18 ዓመት በታች">ለስራ ያልደረሰ ከ18 ዓመት በታች</option>
+                          <option value="ከ18 ዓመት በታች የሆነ ግን የሚሰራ">ከ18 ዓመት በታች የሆነ ግን የሚሰራ</option>
+                          <option value="ተማሪ">ተማሪ</option>
+                          <option value="ሌላ">ሌላ ካለ ይግለጹ</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" name="h-family-1-job-status" id="h-family-1-job-status" style="display: none;">
+                        </li>
+                        <li class="class-family-1-marital-status">
+                            <label for="family-1-marital-status">የጋብቻ ሁኔታ</label>
+                            <select id="family-1-marital-status" name="family-1-marital-status">
+                          <option value="ያላገባ /ች ከ18 ዓመት በላይ">ያላገባ /ች ከ18 ዓመት በላይ</option>
+                          <option value="ያገባ /ች">ያገባ /ች</option>
+                          <option value="ተጋብተው ለየብቻ የሚኖሩ">ተጋብተው ለየብቻ የሚኖሩ</option>
+                          <option value="የፈታ/ች">የፈታ/ች</option>
+                          <option value="የሞተበት /ባት">የሞተበት /ባት</option>
+                          <option value="ለጋብቻ ያልደረሰ/ች ከ18 ዓመት በታች">ለጋብቻ ያልደረሰ/ች ከ18 ዓመት በታች</option>
+                          <option value="ከ18 ዓመት በታች ሁና ያገባች">ከ18 ዓመት በታች ሁና ያገባች</option>
+                       </select>
+                        </li>
+                    </ul>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h3>የቤተሰቡ የገቢ ሁኔታ</h3>
+                    <ul>
+                        <li class="class-income">
+                            <label for="income">የቤተሰቡ አመታዊ ገቢ:</label>
+                            <input type="text" placeholder="በገንዘብ ወይም ባይነት ግለጽ" id="income" name="income">
+                        </li>
+                        <li class="class-income-source">
+                            <label for="income-source">የገቢ ምንጭ:</label>
+                            <input type="text" id="income-source" name="income-source" placeholder="ውርስ">
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+            <input type="button" value="ክፍል 2፡ የአካባቢ ጤና አጠባበቅ" class="shater" id="shater2">
+            <section id="section2" style="display: none;">
+                <h2></h2>
+                <fieldset>
+                    <h3>የአካባቢ ጤና አጠባበቅ</h3>
+                    <ul>
+                        <li class="class-home">
+                            <label for="home">የቤቱ አሰራር: </label>
+                            <select name="home" id="home">
+                            <option value="ከጎረቤት ቤቶች ወይም ከአጥሩ ጋር ተያይዞ የተሰራ">ከጎረቤት ቤቶች ወይም ከአጥሩ ጋር ተያይዞ የተሰራ</option>
+                            <option value="ከጎረቤት ቤቶች ወይም ከአጥሩ በተወሰነ ርቀት የተሰራ">ከጎረቤት ቤቶች ወይም ከአጥሩ በተወሰነ ርቀት የተሰራ</option>
+                         </select>
+                        </li>
+                        <li class="class-no-of-rooms">
+                            <label for="no-of-rooms">የክፍሎች ብዛት፡</label>
+                            <input type="number" id="no-of-rooms" name="no-of-rooms" placeholder="3" min="0">
+                        </li>
+                        <li class="size-of-rooms">
+                            <label for="size-of-rooms">የእያንዳንዱ ክፌልች ስፊት በካሬ ሜትር:</label>
+                            <input type="number" placeholder="20" id="size-of-rooms" name="size-of-rooms" min="0">
+                        </li>
+                        <li class="class-no-of-people">
+                            <label for="no-of-people">በቤትውስጥ የሚኖሩ ሰዎች ብዛት:</label>
+                            <input type="number" placeholder="5" id="no-of-people" name="no-of-people" min="0">
+                        </li>
+                        <li class="class-home-clean">
+                            <label for="home-clean">የቤቱ ንፅህና</label>
+                            <select name="home-clean" id="home-clean">
+                            <option value="አጥጋቢ"><em>አጥጋቢ</em></option>
+                            <option value="መካከለኛ">መካከለኛ</option>
+                             <option value="ዝቅተኛ">ዝቅተኛ</option>
+                        </select>
+                        </li>
+                        <li class="class-air-serculation">
+                            <label for="air-serculation">የአየር ዝውውር</label>
+                            <select name="air-serculation" id="air-serculation">
+                            <option value="አጥጋቢ">አጥጋቢ</option>
+                            <option value="ዝቅተኛ">ዝቅተኛ</option>
+                        </select>
+                        </li>
+                        <li class="class-home-brightness">
+                            <label for="home-brightness">የቤቱ የብርሃን ሁኔታ</label>
+                            <select name="home-brightness" id="home-brightness">
+                            <option value="አጥጋቢ">አጥጋቢ</option>
+                            <option value="መካከለኛ">መካከለኛ</option>
+                            <option value="ዝቅተኛ">ዝቅተኛ</option>
+                        </select>
+                        </li>
+                        <li class="animal">
+                            <label for="animal">በቤት ውስጥ የሚኖር የቤት እንስሳት አለ</label>
+                            <select name="animal" id="animal" onclick="fanimal(this)">
+                            <option value="አዎ">አዎ</option>
+                            <!-- toggler code goes here -->
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <li class="class-how-animal">
+                            <input type="text" id="how-animal" name="how-animal" style="display: none;" placeholder="እንዴት ነው የሚኖሩት">
+                        </li>
+                    </ul>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h3>ለማብስያ የሚጠቀሙበትን የሀይል ምንጭ በተመለከተ</h3>
+                    <ul class="class-kitchen">
+                        <li>
+                            <label for="kitchen">ከመኖሪያ ቤት የተልየ ኩሽና ቤት አለ ?</label>
+                            <select name="kitchen" id="kitchen">
+                            <option value="አዎ">አዎ</option>
+                            <option value="የለም">የለም</option>                
+                        </select>
+                        </li>
+                        <li class="class-open-cheminy">
+                            <label for="open-cheminy">ኩሽና ቤቱ ካለ የጭስ ማስዎጫ ክፍተት አለው?</label>
+                            <select name="open-cheminy" id="open-cheminy">
+                            <option value="አዎ">አዎ</option>
+                            <option value="የለም">የለም</option> 
+                        </select>
+                        </li>
+                        <li class="class-energy-source">
+                            <label for="energy-source">ምግብ ለማብሰል የሚጠቀሙት የሃይል ምንጭ </label>
+                            <select name="energy-source" id="energy-source" onclick="fenergySource(this)">
+                            <option value="እንጨትና ኩበት">እንጨትና ኩበት</option>
+                            <!-- toggle code goes here -->
+                            <option value="ቡታጋዝ">ቡታጋዝ</option>
+                            <option value="ኤላክትሪክ">ኤላክትሪክ</option>
+                        </select>
+                        </li>
+                        <li id="li_wood" style="display: none;">
+                            <label for="wood">የሚጠቀሙት የማብስያ ሁኔታ</label>
+                            <select name="wood" id="wood">
+                            <option value="ማገዶ ቆጣቢ ምድጃ ">ማገዶ ቆጣቢ ምድጃ</option>
+                            <option value="ማገዶ ቆጣቢ ያሌሆነ ምድጃ ">ማገዶ ቆጣቢ ያልሆነ ምድጃ</option>
+                        </select>
+                        </li>
+                        <li id="li_electric" style="display: none;">
+                            <label for="electric">የኤላክትሪክ ገመዱ ያልተልላጠ ወይም በግድግዳ ውስጥ ለውስጥ የተዘረጋ ነው?</label>
+                            <select name="electric" id="electric">
+                            <option value="አዎ">አዎ</option>
+                            <option value="አይደሇም">አይደለም</option>
+                        </select>
+                        </li>
+                        <li class="class-fire-accident">
+                            <label for="fire-accident">በኩሽና ቤቱ የእሳት አደጋ በቀላል ማስነሳት የሚችል ( ለምሳሌ ጋዝ ወይም ናፍጣ ) ነገሮች ይቀመጣለ?</label>
+                            <select name="fire-accident" id="fire-accident">
+                            <option value="አዎ">አዎ</option>
+                            <option value="አይደለም">አይደለም</option>
+                        </select>
+                        </li>
+                    </ul>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h3>ውሃን በተመለከተ</h3>
+                    <ul>
+                        <li class="class-water1">
+                            <label for="water1">ለቤተሰቡ ግልጋሎት የሚሆነውን ውሃ ከየት ያገኛሉ?</label>
+                            <select name="water1" id="water1" onclick="fwater1(this)">
+                            <option value="ከቧንቧ ">ከቧንቧ</option>
+                            <option value="ከተጠበቀ የውሃ ጉድጓድ ">ከተጠበቀ የውሃ ጉድጓድ </option>
+                            <option value="ካልተጠበቀ የውሃ ጉድጓድ /ምንጭ">ካልተጠበቀ የውሃ ጉድጓድ /ምንጭ</option>
+                            <option value="ከወንዝ ">ከወንዝ</option>
+                        </select>
+                        </li>
+                        <!-- goes display none -->
+                        <li id="li-river-water" style="display: none;">
+                            <strong>ከተጠበቀ የውሃ ጉድጓድ /ምንጭ ማለት ውሃን ሊበክሉ ከሚችሉ ነገሮች ማለትም ከጎርፍ ፣ ከንፋስ ፣ከእንስሳት ከሰዎች ንክኪ የተከለከለ ማለት ነው::</strong><br>
+                            <label for="river-water">ጉድጓድ /ምንጭ ለመጠጥነት ከመጠቀመዎ በፊት ምን ያደርጋሉ?</label>
+                            <select name="river-water" id="river-water" onchange="friverWater(this)">
+                            <option value="በደንብ አፈላና አቀዘቅዘዋለሁ የጽሀይ ብርሃን ባለበት ቦታ አስቀምጠዎለሁ "> በደንብ አፈላና አቀዘቅዘዋለሁ የጽሀይ ብርሃን ባለበት ቦታ አስቀምጠዎለሁ</option>
+                            <option value="የጽሀይ ብርሃንን ማሳለፍ በሚችል እቃ ውስጥ በማስቀመጥ ">የጽሀይ ብርሃንን ማሳለፍ በሚችል እቃ ውስጥ በማስቀመጥ</option>
+                            <option value="በክሎሪን/በውሃ አጋር እክመዋለሁ ">በክሎሪን/በውሃ አጋር እክመዋለሁ</option>
+                            <option value="ሌላ ካለ ይግለጹ">ሌላ ካለ ይግለጹ</option>
+                         </select>
+                        </li>
+                        <li>
+                            <input type="text" id="h_river_water" name="h_river_water" placeholder="ሌላ ካለ ይግለጹ" style="display: none;">
+                        </li>
+                        <li class="class-water-heigen">
+                            <label for="water-heigen">የመጠጥ ውሃን በቤት ውስጥ እንዴት ያስቀምጣሉ</label>
+                            <select name="water-heigen" id="water-heigen" onclick="waterHeigen(this)">
+                            <option value="ንጹህ በሆነ ጀሪካን">ንጹህ በሆነ ጀሪካን</option>
+                            <option value="ክዳን ባሇው እንስራ">ክዳን ባለው እንስራ</option>
+                            <option value="በበርሜሌ">በበርሜል</option>
+                            <option value="ሌላ">ሌላ ካለ ይግለጹ</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" id="h_water_heigen" name="h_water_heigen" placeholder="መልስዎትን እዚህ ያስቀምጡ" style="display: none;">
+                        </li>
+                        <li class="class-water-fetching">
+                            <label for="water-fetching">ለመጠጥ የሚሆነውን ውሃ ከማጠራቀሚያው እንዴት ይቀዱታል ?</label>
+                            <select name="water-fetching" id="water-fetching">
+                            <option value="በማንቆርቆር">በማንቆርቆር</option>
+                            <option value="በማጥለቅ">በማጥለቅ</option>
+                        </select>
+                        </li>
+                        <!-- bottom goes display none -->
+                        <li class="class-common-jug">
+                            <label for="common-jug">ተለይቶ የተቀመጠ መቅጃ አለ</label>
+                            <select name="common-jug" id="common-jug">
+                            <option value="አለ">አለ</option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <!-- bottom goes display none -->
+                        <li id="li-no-minute" style="display: none;">
+                            <label for="no-minute">ውሃን ከምንጩ ሄዶ ለማምጣት ለደርሶ መልስ (የወረፋ ጌዜን ሳይጨምር )የሚወስድብዎ ጌዜ ስንት ነው( በደቂቃ ይቀመጥ ) </label>
+                            <input type="number" id="no-minute" name="no-minute" placeholder="20">
+                        </li>
+                        <li class="class-no-litter">
+                            <label for="no-litter ">የውሃ ፌጆታዎ በቀን ምን ያህል ሊትር ነው (ለጠላ ዝግጅት የሚውለውን አይጨምርም )</label>
+                            <input type="number" id="no-litter" name="no-litter" placeholder="40">
+                        </li>
+                    </ul>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h3>የምግብ ዝግጅት ፣ ንፅህናና ደህንነት በተመለከተ</h3>
+                    <ul>
+                        <li class="class-dish-wash">
+                            <label for="dish-wash">የምግብ ዕቃዎችን በምን ያጥባሉ?</label>
+                            <select name="dish-wash" id="dish-wash" onclick="dishWash(this)">
+                            <option value="በውሃ ብቻ">በውሃ ብቻ</option>
+                            <option value="በሳሙናና በውሃ ብቻ"> በሳሙናና በውሃ ብቻ</option>
+                            <option value="ሌላ">ሌላ</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" id="h_dish_wash" name="h_dish_wash" placeholder="እዚ ጋ ይግለጹ" style="display: none;">
+                        </li>
+                        <li class="class-dish-drying">
+                            <label for="dish-drying"> የታጠብ ዕቃዎችን በምን ያደርቃለ ?</label>
+                            <select name="dish-drying" id="dish-drying">
+                            <option value="በመወልወያ ጨርቅ">በመወልወያ ጨርቅ</option>
+                            <option value="ማንጠፍጠፊያ ላይ በማስቀመጥ በአየር እንዲደርቅ በማድረግ">ማንጠፍጠፊያ ላይ በማስቀመጥ በአየር እንዲደርቅ በማድረግ</option>
+                        </select>
+                        </li>
+                        <li class="class-dish-placing">
+                            <label for="dish-placing">ታጥበው የደረቁ የምግብ ዕቃዎችንና ምግብ የት ያስቀምጣሉ ?</label>
+                            <select name="dish-placing" id="dish-placing">
+                            <option value="በወለል ወይም በደረጃ ላይ">በወለል ወይም በደረጃ ላይ</option>
+                            <option value="ከእንጨትና ከጭቃ በተሠራ መደርደሪያ ላይ">ከእንጨትና ከጭቃ በተሠራ መደርደሪያ ላይ</option>
+                            <option value="በዘመናዊ መልኩ በተሰራ በተዘጋጀ ቡፌ">በዘመናዊ መልኩ በተሰራ በተዘጋጀ ቡፌ</option>
+                        </select>
+                        </li>
+                        <li class="class-food-placing">
+                            <label for="food-placing"> ለበሰሉና ላልበሰሉ ምግቦች የተለያየ ማስቀመጫ ፣ መክተፉያ ጣውላና ቢላዋ ይጠቀማሉ ?</label>
+                            <select name="food-placing" id="food-placing"> 
+                            <option value="እጠቀማለሁ">እጠቀማለሁ</option>
+                            <option value="አልጠቀምም">አልጠቀምም</option>
+                        </select>
+                        </li>
+                        <li id="li-leftover-food">
+                            <label for="leftover-food">የተረፈ ምብግ በድጋሚ ይጠቀማሉ</label>
+                            <select name="leftover-food" id="leftover-food" onclick="leftoverFood(this)">
+                            <option value="እጠቀማለሁ">እጠቀማለሁ</option>                            
+                            <option value="አሌጠቀምም">አልጠቀምም</option>
+                        </select>
+                        </li>
+                        <li id="li-leftover-food-yes" style="display: none;">
+                            <label for="leftover-food-yes">የተረፈ ምብግ በድጋሚ የሚጠቀሙ ከሆነ በደንብ ያሞቁታል ?</label>
+                            <select name="leftover-food-yes" id="leftover-food-yes">
+                            <option value="አዎ">አዎ</option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <li class="with-dihariya">
+                            <label for="with-dihariya">ተቅማጥ ፣ሳል፣የእጅ ቁስል ወይም ሌሎች በሽታዎች እያለብዎት ምግብ ያዘጋጃሉ ?</label>
+                            <select name="with-dihariya" id="with-dihariya">
+                            <option value="አዎ">አዎ</option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <li class="touch-nose">
+                            <label for="touch-nose">ምግብ እያዘጋጁ ቆዳዎትን ፣አፌንጫዎትን ወይም ጆሮዎትን በጣትዎ ይነካሉ ?</label>
+                            <select name="touch-nose" id="touch-nose">
+                            <option value="አዎ">አዎ</option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <li class="class-cut-nail">
+                            <label for="cut-nail">ምግብ ሲያዘጋጁ ፀጉርዎትን ይሸፍናሉ ፣የእጅዎን ጥፍር ያሳጥራሉ ፣ የለበሱትን ጌጣጌጥ ያወልቃሉ ?</label>
+                            <select name="cut-nail" id="cut-nail">
+                            <option value="አዎ">አዎ</option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <p>እጅዎትን መቸ መቸ ይታጠባሉ(ከአንድ በላይ መልስ ይቻላል)</p>
+                        <li class="class-before-cook">
+                            <label for="before-cook">ከምግብ ዝግጅት በፊት</label>
+                            <input type="checkbox" name="before-cook" id="before-cook" value="ከምግብ ዝግጅት በፊት ">
+                        </li>
+                        <li class="class-after-heign">
+                            <label for="after-heign">ህፃናትን ካፀዳዳሁ በኋላ</label>
+                            <input type="checkbox" name="after-heign" id="after-heign" value="ህፃናትን ካፀዳዳሁ በኋላ ">
+                        </li>
+                        <li class="class-after-toilet">
+                            <label for="after-toilet">ከሽንት ቤት መልስ </label>
+                            <input type="checkbox" name="after-toilet" id="after-toilet" value="ከሽንት ቤት መልስ ">
+                        </li>
+                        <li class="class-after-touch">
+                            <label for="after-touch">ቆዳየን ፣አፌንጫየን ፣ጆሮየን ከነካሁ በኋላ</label>
+                            <input type="checkbox" name="after-touch" id="after-touch" value="ቆዳየን ፣አፌንጫየን ፣ጆሮየን ከነካሁ በኋላ ">
+                        </li>
+                        <li class="class-touch-money">
+                            <label for="touch-money">ብርና ሌሎች ቁሳቁሶችን ከነካሁ በኋላ</label>
+                            <input type="checkbox" name="touch-money" id="touch-money" value="ብርና ሌሎች ቁሳቁሶችን ከነካሁ በኋላ ">
+                        </li>
+                        <li class="class-wash-hand-with">
+                            <label for="wash-hand-with">እጅዎን በምን ይታጠባሉ ?</label>
+                            <select name="wash-hand-with" id="wash-hand-with" onclick="washHandWith(this)">
+                            <option value="በሳሙናና በውሃ">በሳሙናና በውሃ</option>
+                            <option value="በውሃ ብቻ">በውሃ ብቻ</option>
+                            <option value="ሌላ">ሌላ ካለ ይጠቀሱ</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" id="h_wash_hand_with" name="h_wash_hand_with" style="display: none;" placeholder="እዚህ ጋ ይግለጹ">
+                        </li>
+                    </ul>
+                </fieldset>
+                <h3>መፀዳጃ ቤትን በተመለከተ</h3>
+                <fieldset>
+                    <ul>
+                        <li class="class-exist-toilet">
+                            <label for="exist-toilet">መፀዳጃ ቤት አለዎት ?</label>
+                            <select name="exist-toilet" id="exist-toilet" onclick="existToilet(this)">
+                            <option value="አዎ"> አዎ</option>
+                            <option value="የለም"> የለም</option>
+                        </select>
+                        </li>
+                        <li id="li-yes-exist-toilet" style="display: none;">
+                            <label for="yes-exist-toilet">ክዳን አለው?</label>
+                            <select name="yes-exist-toilet" id="yes-exist-toilet">
+                            <option value="አለው">አለው</option>
+                            <option value="የለውም">የለውም</option>
+                        </select>
+                        </li>
+                        <li id="li-handle-toilet" style="display: none;">
+                            <label for="handle-toilet">መፀዳጃ ቤት ካለው የይዞታ ሁኔታ</label>
+                            <select name="handle-toilet" id="handle-toilet" onclick="handleToilet(this)">
+                            <option value="የህዝብ">የህዝብ</option>
+                            <option value="በግቢ ውስጥ ሆኖ የጋራ">በግቢ ውስጥ ሆኖ የጋራ</option>
+                            <option value="የግል">የግል</option>
+                            <option value="ሌላ">ሌላ ካለ ይግልፁ</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" id="h_handle_toilet" name="h_handle_toilet" placeholder="እዚህ ጋ ይግለጹ" style="display: none;">
+                        </li>
+                        <li id="li-use-toilet-properly" style="display: none;">
+                            <label for="use-toilet-properly">መፀዳጃ ቤት ካለ በስርዓት ይጠቀሙበታል ( አካባቢውን በማየት ከሰገራ የፀዳ ከሆነ ፣ወደ መፀዳጃ ቤት የሚወስድ የሚለይ መንገድ ካለ፣መፀዳጃ ቤት ወለል ላይ ምንም ሰገራ ከላለው)</label>
+                            <select name="use-toilet-properly" id="use-toilet-properly">
+                            <option value="ይጠቀሙበታል">ይጠቀሙበታል</option>
+                            <option value="አይጠቀሙበትም">አይጠቀሙበትም</option>
+                        </select>
+                        </li>
+                        <li id="li-distance-toilet-home" style="display: none;">
+                            <label for="distance-toilet-home">ከዋናው ቤት ያለው ርቀት(በሜትር)</label>
+                            <input type="number" id="distance-toilet-home" name="distance-toilet-home" min="0">
+                        </li>
+                        <li id="li-distance-toilet-kitchen" style="display: none;">
+                            <label for="distance-toilet-kitchen"> ከኩሽናው ያለው ርቀት(በሜትር)</label>
+                            <input type="number" id="distance-toilet-kitchen" name="distance-toilet-kitchen" min="0">
+                        </li>
+                        <li id="li-distance-toilet-water" style="display: none;">
+                            <label for="distance-toilet-water"> ከውሃው ያለው ርቀት(በሜትር)</label>
+                            <input type="number" name="distance-toilet-water" id="distance-toilet-water" min="0">
+                        </li>
+                        <li id="li-exist-siphon-toilet" style="display: none;">
+                            <label for="exist-siphon-toilet">ከመፀዳጃ ቤቱ ጋር የተያያዘ የእጅ በታጠቢያ አለ ?</label>
+                            <select name="exist-siphon-toilet" id="exist-siphon-toilet">
+                            <option value="አዎ">አዎ</option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <li id="li-type-toilet" style="display: none;">
+                            <label for="type-toilet">የመፀዳጃ ቤቱ አይነት ?</label>
+                            <select name="type-toilet" id="type-toilet" onclick="typeToilet(this)">
+                            <option value="የተለምዶ ጉድጓድ">የተለምዶ ጉድጓድ</option>
+                            <option value="በውሃ የሚሰራ"> በውሃ የሚሰራ</option>
+                            <option value="ሽታ አልባ"> ሽታ አልባ</option>
+                            <option value="ሌላ">ሌላ ካለ ጥቀስ</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" id="h_type_toilet" name="h_type_toilet" style="display: none;" placeholder="መልስዎትን እዚህ ያስቀምጡ">
+                        </li>
+                        <li id="li-clean-toilet" style="display: none;">
+                            <label for="clean-toilet">መፀዳጃ ቤቱ ንፁህ ነው </label>
+                            <select name="clean-toilet" id="clean-toilet">
+                            <option value="አዎ"> አዎ</option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <li id="li-palce-family-use-toilet" style="display: none;">
+                            <!-- toggle code goes here -->
+                            <label for="palce-family-use-toilet">የመፀዳጃ ቤት ከሌለ ቤተሰቡ የት ይጠቀማል ?</label>
+                            <input type="text" name="palce-family-use-toilet" id="palce-family-use-toilet">
+                        </li>
+                        <li id="li-reason-not-have-toilet" style="display: none;">
+                            <label for="reason-not-have-toilet">መፀዳጃ ቤት ላለመኖርዎ ምክንያትዎ ምንድን ነው?</label>
+                            <input type="text" id="reason-not-have-toilet" name="reason-not-have-toilet">
+                        </li>
+                        <li class="class-dry-garbage">
+                            <label for="dry-garbage">የግቢ ደረቅ ቆሻሻ በሚመለከት?</label>
+                            <select name="dry-garbage" id="dry-garbage" onclick="dryGarbage(this)">
+                            <option value="በግቢ ውስጥ በተቆፈረ ጉድጓድ">በግቢ ውስጥ በተቆፈረ ጉድጓድ</option>
+                            <option value="በመበተን ጉድጓድ">በመበተን ጉድጓድ</option>
+                            <option value="ለጓሮ አትክልት">ለጓሮ አትክልት</option>
+                            <option value="ከግቢ ውጭ በተቆፈረ">ከግቢ ውጭ በተቆፈረ</option>
+                            <option value="ሜዳ ላይ">ሜዳ ላይ </option>
+                            <option value="በማዘጋጃ ቤት">በማዘጋጃ ቤት</option>
+                            <option value="ሌላ">ሌላ ካለ (ይጥቀሱ)</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" id="h_dry_garbage" name="h_dry_garbage" placeholder="መልስዎትን እዚህ ያስቀምጡ" style="display: none;">
+                        </li>
+                        <li>
+                            <label for="temp-garbage-bin">ክዳን ያለው ጌዜያዊ የደረቅ ቆሻሻ ማጠራቀሚያ አለ?</label>
+                            <select name="temp-garbage-bin" id="temp-garbage-bin">
+                            <option value="አዎ">አዎ</option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <li class="averall-cpd-heign">
+                            <label for="averall-cpd-heign"> የግቢ አጠቃሊይ ንፅህና ምን ይመስላል?</label>
+                            <select name="averall-cpd-heign" id="averall-cpd-heign">
+                            <option value="ንጹህ ነው">ንጹህ ነው</option>
+                            <option value="ንፅህና ይጎድለዋል">ንፅህና ይጎድለዋል</option>
+                        </select>
+                        </li>
+                        <li>
+                            <!-- //intentional skiped 2.46 check it out -->
+                            <label for="bouching-place">የእንስሳት እርድ የሚካሄደው የት ነው ?</label>
+                            <select name="bouching-place" id="bouching-place" onclick="bouchingPlace(this)">
+                            <option value="ቄራ">ቄራ</option>
+                            <option value="ከግቢ /ቤት ውስጥ">ከግቢ /ቤት ውስጥ</option>
+                            <option value="ሜዳ ሊይ">ሜዳ ሊይ</option>
+                            <option value="ሌላ">ሌላ ካለ (ይጥቀሱ) </option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" id="h_bouching_place" name="h_bouching_place" placeholder="መልስዎትን እዚህ ያስቀምጡ" style="display: none;">
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+            <input type="button" value="ክፍል 3 ፡ የእናቶችን እና የህፃናትን ጤና በተመለከተ" class="shater" id="shater3">
+            <section id="section3" style="display: none;">
+                <fieldset>
+                    <h3>የህፃናትን ጤና በተመለከተ</h3>
+                    <ul>
+                        <li class="class-adult-female">
+                            <label for="adult-female"> በቤተሰቡ ውስጥ በመውለድ እድሜ ክልል (15-49አመት) ውስጥ የሚገኙ ሴቶች ብዛት</label>
+                            <input type="number" name="adult-female" id="adult-female" min="0" placeholder="4" oninput="adultFemale(this)">
+                        </li>
+                        <li id="li-maried-at" style="display: none;">
+                            <label for="maried-at">አግብተው ለሚያውቁ ሴቶች መጀመሪያ ሲያገቡ /ጎጆ ሲወጡ የነበራችው እድሜ</label>
+                            <input type="number" min="0" placeholder="23" id="maried-at" name="maried-at">
+                        </li>
+                        <li id="li-pregnant-women" style="display: none;">
+                            <label for="pregnant-women">በቤተሰብ ውስጥ በአሁን ጌዜ ያለ ነፌሰጡር እናተቶች ብዛት </label>
+                            <input type="number" min="0" id="pregnant-women" name="pregnant-women" placeholder="1" oninput="pregnantWomen(this)">
+                        </li>
+                        <li id="li-pregnacy-checkup" style="display: none;">
+                            <label for="pregnacy-checkup">ነፍሰጡር እናተቶች ካለ የቅድመ ወሉድ ምርመራ በመከታተል ላይ ያለ ብዛት</label>
+                            <input type="number" id="pregnacy-checkup" name="pregnacy-checkup" min="0" placeholder="1" oninput="pregnacyCheckup(this)">
+                        </li>
+                        <li id="li-pregnacy-checkup-reason" style="display: none;">
+                            <label for="pregnacy-checkup-reason">ምርመራ የሚያደርጉ ነፍሰጡሮች ካለ የእያንዳንዳቸው ምክንያት ምንድን ነው</label>
+                            <select name="pregnacy-checkup-reason" id="pregnacy-checkup-reason" onclick="pregnacyCheckupReason(this)">
+                            <option value="ጥቅም እንዳለው ስለሚያውቁ">ጥቅም እንዳለው ስለሚያውቁ</option>  
+                            <option value="ስለማይፈልጉ">ስለማይፈልጉ</option>
+                            <option value="እንዳለ ስለማያውቁ">እንዳለ ስለማያውቁ</option>
+                            <option value="የጤና ድርጅት በቅርቡ አለመኖሩ">የጤና ድርጅት በቅርቡ አለመኖሩ </option>
+                            <option value="የጤና ባለሙያዎች በቂ እንክብካቤ ስለማያደርጉ">የጤና ባለሙያዎች በቂ እንክብካቤ ስለማያደርጉ</option>
+                            <option value="ሌላ">ሌላ ካለ ይግልውጹ</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" id="h_pregnacy_checkup_reason" name="h_pregnacy_checkup_reason" style="display: none;">
+                        </li>
+                        <li id="li-cuase-of-desease" style="display:none;">
+                            <label for="cuase-of-desease">አሁን ነፌሰጡር ከሆኑ እናቶች ያላችው የጤና ችግር ምንድን ነው?</label>
+                            <input type="text" id="cuase-of-desease" name="cuase-of-desease">
+                        </li>
+                        <li id="li-first-birth-age" style="display: none;">
+                            <label for="first-birth-age"> የወለዱ ሴቶች የመጀመሪያ ሌጅ ሲወልዱ የነበራችው እድሜ </label>
+                            <input type="number" id="first-birth-age" min="0" placeholder="18">
+                        </li>
+                        <li id="li-happened-abortion" style="display: none;">
+                            <label for="happened-abortion">በቤተሰብ ውስጥ ካለ ሴቶች ባለፈው አንድ አመት ውርጃ አጋጥሞ ያውቃል</label>
+                            <select name="happened-abortion" id="happened-abortion" onclick="happenedAbortion(this)">
+                            <option value="አዎ"> አዎ</option>
+                            <option value="የለም">የለም </option>
+                        </select>
+                        </li>
+                        <li id="li-no-abortion" style="display: none;">
+                            <label for="no-abortion">መልስዎ አወ ከሆነ ስንት ጌዜ አጋጥሟቸዋል </label>
+                            <input type="number" id="no-abortion" name="no-abortion" placeholder="1" min="0">
+                        </li>
+                        <li id="li-no-maternal-dith" style="display: none;">
+                            <label for="no-maternal-dith">በቤተሰቡ ውስጥ በወሉድ ምክንያት ባለፈው አንድ አመት የሞቱ እናቶች ብዛት</label>
+                            <input type="number" id="no-maternal-dith" name="no-maternal-dith" placeholder="0" min="0">
+                        </li>
+                        <li id="li-no-mothers-age-five" style="display: none;">
+                            <label for="no-mothers-age-five">በቤተሰቡ ውስጥ እድሜያቸው አምስት አመት ያልሞላው ሌጅ ያላቸው እናቶች ብዛት</label>
+                            <input type="number" min="0" id="no-mothers-age-five" name="no-mothers-age-five" placeholder="1">
+                        </li>
+                        <li id="li-home-birth" style="display: none;">
+                            <label for="home-birth">ከእያንዳንዱ እናት ባለፈው እንድ አመት ከተወለዱ ህፃናት ውስጥ በቤት ውስጥ የተገላገሉ ካለ ብዛት</label>
+                            <input type="number" id="home-birth" name="home-birth" min="0 " placeholder="0" oninput="homeBirth(this)">
+                        </li>
+                        <li id="li-hospital-birth" style="display: none;">
+                            <label for="hospital-birth">ከእያንዳንዱ እናት ባለፈው እንድ አመት ከተለዱ ህፃናት ውስጥ በጤና ድርጅት የተገላገሉ ካሉ ብዛት</label>
+                            <input type="number" id="hospital-birth" name="hospital-birth" min="0" placeholder="1" oninput="hospitalBirth(this)">
+                        </li>
+                        <li id="li-reason-for-home-birth" style="display: none;">
+                            <label for="reason-for-home-birth">በቤት ውስጥ የተገላገሉ ካሉ በቤት ውስጥ የመገላገላችው ምክንያት ምንድን ነው</label>
+                            <input type="text" id="reason-for-home-birth" name="reason-for-home-birth">
+                        </li>
+                        <li id="li-no-twin-birth" style="display: none;">
+                            <label for="no-twin-birth">ባለፈው አንድ አመት መንትያ የወለዱ ሴቶች ብዛት</label>
+                            <input type="number" id="no-twin-birth" name="no-twin-birth" min="0" placeholder="0">
+                        </li>
+                        <li id="li-no-operation-birth" style="display: none;">
+                            <label for="no-operation-birth">ባለፈው አንድ አመት በሆድ ቀዶ ህክምና የተገላገሉ እናቶች ብዛት</label>
+                            <input type="number" id="no-operation-birth" name="no-operation-birth" min="0" placeholder="0">
+                        </li>
+                        <li id="li-after-birth-checkup" style="display: none;">
+                            <label for="after-birth-checkup">ከወለዱ በኃላ የድህረ ወሊድ ክትትል አድርገው ያውቃሉ (6ወር በታች ህፃናት ላላችው እናቶች)</label>
+                            <input type="number" id="after-birth-checkup" name="after-birth-checkup" min="0" placeholder="1" oninput="afterBirthCheckup(this)">
+                        </li>
+                        <li id="li-after-birth-checkup-no" style="display: none;">
+                            <label for="after-birth-checkup-no">የላይኛው ጥያቄ መልስዎ የለም ከሆነ ምክንያትዎ ምንድን ነበረ</label>
+                            <input type="text" id="after-birth-checkup-no" name="after-birth-checkup-no">
+                        </li>
+                    </ul>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h3>የቤተሰብ ዕቅድ በተመለከተ (በቤተሰቡ ውስጥ ያለ ያገቡ ወይም የወለዱ ሴቶች ብቻ የሚመለከት)</h3>
+                    <ul>
+                        <li>
+                            <label for="have-other-child">ተጨማሪ ልጅ መውለድ ይፈልጋሉ ?</label>
+                        </li>
+                        <li class="class-have-other-child-1">
+                            <label for="have-other-child-1">እፈልጋለሁ (አሁኑን)</label>
+                            <input type="radio" name="have-other-child" id="have-other-child-1">
+                        </li>
+                        <li class="class-have-other-child-2">
+                            <label for="have-other-child-2"> እልጋለሁ ነገር ግን (ከ--------------- ዓመት በኃሊ)</label>
+                            <input type="radio" name="have-other-child" id="have-other-child-2">
+                        </li>
+                        <li>
+                            <input type="number" id="h_have_other_child_2" name="h_have_other_child_2" placeholder="" style="display: none;">
+                        </li>
+                        <li class="class-have-other-child-3">
+                            <label for="have-other-child-3">አልፈልግም</label>
+                            <input type="radio" name="have-other-child" id="have-other-child-3">
+                        </li>
+                        <li class="class-konow-controled-bith">
+                            <label for="konow-controled-bith"> አራርቆ ለመውልድ የሚያስችሉ ዘዴዎች እንዳሉ ያውቃሉ?</label>
+                            <select name="konow-controled-bith" id="konow-controled-bith">
+                            <option value="አዎ">አዎ</option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <li id="li-yes-konow-controled-bith" style="display: none;">
+                            <label for="yes-konow-controled-bith">አዎ ካሉ የሚያውቋቸውን ዘዴዎች /አይነት ይግለፁ</label>
+                            <input type="text" name="yes-konow-controled-bith" id="yes-konow-controled-bith">
+                        </li>
+                        <li id="li-use-birth-control">
+                            <label for="use-birth-control">በአሁኑ ስዓት የእርግዝና መከላከያ ተጠቅመው ያውቃሉ?</label>
+                            <select name="use-birth-control" id="use-birth-control">
+                            <option value="አዎ"> አዎ</option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <li id="li-yes-use-birth-control" style="display: none;">
+                            <label for="yes-use-birth-control">አዎ ካሉ የትኞቹን የእርግዝና መከላከያ ዘዴ ይጠቅማሉ</label>
+                            <input type="text" name="yes-use-birth-control" id="yes-use-birth-control">
+                        </li>
+                        <li id="li-no-use-birth-control">
+                            <label for="no-use-birth-control">አልጠቀምም ካሉ ለምን ?</label>
+                            <select name="no-use-birth-control" id="no-use-birth-control">
+                            <option value="ስልውማይፈልጉ">ስልውማይፈልጉ</option>
+                            <option value="የጤና ችግር ስለምያስከትል">የጤና ችግር ስለምያስከትል</option>
+                            <option value="ስለማይገኝ">ስለማይገኝ</option>
+                            <option value="ውድ ስለሆነ">ውድ ስለሆነ</option>
+                            <option value="ሃይማኖት ስለማይፈቅድ">ሃይማኖት ስለማይፈቅድ</option>
+                            <option value="ባል /ጓደኛ ስለሚቃወም">ባል /ጓደኛ ስለሚቃወም</option>
+                            <option value="ህመምተኛ ስለሆንኩ">ህመምተኛ ስሇለንኩ</option>
+                            <option value="ሌላ (ይጥቀሱ)">ሌላ (ይጥቀሱ)</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" id="h-no-use-birth-control" name="h-no-use-birth-control" style="display: none;">
+                        </li>
+                        <li class="class-future-use-birth-control">
+                            <label for="future-use-birth-control"> ወደ ፉት ለመጠቀም ሀሳብ አለዎት ? </label>
+                            <select name="future-use-birth-control" id="future-use-birth-control">
+                            <option value="አዎ">አዎ </option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                    </ul>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h3>የህፃናት እና የእናቶችን ክትባት በተመለከተ</h3>
+                    <ul>
+                        <li class="class-no-infant-vaccine">
+                            <label for="no-infant-vaccine">እድሜያችው አንድ አመት ካልሞላችው ህፃናት ውስጥ ክትባት የተከተቡት ስንት ናችው</label>
+                            <input type="number" id="no-infant-vaccine" name="no-infant-vaccine" min="0" oninput="noInfantVaccine(this)">
+                        </li>
+                        <li id="li-no-infant-vaccine-with-card" style="display: none;">
+                            <label for="no-infant-vaccine-with-card">ከተከተቡት መካከል የክትባት ካርድ ያላችው ስንት ናቸው</label>
+                            <input type="number" min="0 " id="no-infant-vaccine-with-card" name="no-infant-vaccine-with-card" oninput="noInfantVaccineWithCard(this)">
+                            <!-- የክትባት ካርድ ሊሊቸው ህፃናት የክትባት ሁኔታ ይመዝገብ -->
+                        </li>
+                        <p id="rp" style="display: none;">የክትባት ካርድ ላላቸው ህፃናት የክትባት ሁኔታ ይመዝገብ</p>
+                        <li id="li-bcg-vaccine" style="display: none;">
+                            <label for="bcg-vaccine">ቢሲጂ</label>
+                            <textarea name="bcg-vaccine" id="bcg-vaccine"></textarea>
+                        </li>
+                        <li id="li-polio-vaccine" style="display: none;">
+                            <label for="polio-vaccine">ፖሊዩ</label>
+                            <textarea name="polio-vaccine" id="polio-vaccine"></textarea>
+                        </li>
+                        <li id="li-pentavalent-vaccine" style="display: none;">
+                            <label for="pentavalent-vaccine">ፔንታቫለንት</label>
+                            <textarea name="pentavalent-vaccine" id="pentavalent-vaccine" cols="5"></textarea>
+                        </li>
+                        <li id="li-pcv-vaccine" style="display: none;">
+                            <label for="pcv-vaccine">ፒሲቪ</label>
+                            <textarea name="pcv-vaccine" id="pcv-vaccine" cols="5"></textarea>
+                        </li>
+                        <li id="li-rota-vaccine" style="display: none;">
+                            <label for="rota-vaccine">ሮታ</label>
+                            <textarea name="rota-vaccine" id="rota-vaccine"></textarea>
+                        </li>
+                        <li id="li-kufgn-vaccine" style="display: none;">
+                            <label for="kufgn-vaccine">  ኩፍኝ</label>
+                            <textarea name="" id="kufgn-vaccine" name="kufgn-vaccine"></textarea>
+                        </li>
+                        <li id="li-mengagakolf-vaccine">
+                            <label for="mengagakolf-vaccine">በቤተሰብ ውስጥ እድሜያችው 15-49 አመት ከሆኑ ሴቶች የመንጋጋ ቆልፍ መከላከያ የተከተቡ ብዛት</label>
+                            <input type="number" id="mengagakolf-vaccine" name="mengagakolf-vaccine" min="0" oninput="mengagakolfVaccine(this)">
+                        </li>
+                        <li id="li-from-mengagakolf-vaccine" style="display: none;">
+                            <label for="from-mengagakolf-vaccine">ከተከተቡት ሴቶች ውስጥ 1-5 ጌዜ የወሰዱት ስንት ናችው</label>
+                            <input type="number" id="from-mengagakolf-vaccine" name="from-mengagakolf-vaccine" min="0" oninput="fromMengagakolfVaccine(this)">
+                        </li>
+                        <li id="li-one-time-mengagakolf-vaccine" style="display: none;">
+                            <label for="one-time-mengagakolf-vaccine">1ጌዜ</label>
+                            <input type="number" id="one-time-mengagakolf-vaccine" name="one-time-mengagakolf-vaccine" min="0 ">
+                        </li>
+                        <li id="li-two-times-mengagakolf-vaccine" style="display: none;">
+                            <label for="two-times-mengagakolf-vaccine">2ጌዜ</label>
+                            <input type="number" id="two-times-mengagakolf-vaccine" name="two-times-mengagakolf-vaccine" min="0">
+                        </li>
+                        <li id="li-three-times-mengagakolf-vaccine" style="display: none;">
+                            <label for="three-times-mengagakolf-vaccine">3ጌዜ</label>
+                            <input type="number" id="three-times-mengagakolf-vaccine" name="three-times-mengagakolf-vaccine" min="0">
+                        </li>
+                        <li id="li-four-times-mengagakolf-vaccine" style="display: none;">
+                            <label for="four-times-mengagakolf-vaccine">4ጌዜ</label>
+                            <input type="number" id="four-times-mengagakolf-vaccine" name="four-times-mengagakolf-vaccine" min="0">
+                        </li>
+                        <li id="li-five-times-mengagakolf-vaccine" style="display: none;">
+                            <label for="five-times-mengagakolf-vaccine">5ጌዜ</label>
+                            <input type="number" id="five-times-mengagakolf-vaccine" name="five-times-mengagakolf-vaccine" min="0">
+                        </li>
+                        <li id="li-pregnant-mengagakolf-vaccine">
+                            <label for="pregnant-mengagakolf-vaccine">በቤተሰብ ውስጥ ካሉት ነፍሰጡሮች የመንጋጋ ቆልፍ መከላከያ የተከተቡት ብዛት</label>
+                            <input type="number" id="pregnant-mengagakolf-vaccine" name="pregnant-mengagakolf-vaccine" min="0">
+                        </li>
+                    </ul>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h3>የህፃናትና የልጆችን ህመም የሚመለከቱ ጥያቂዎች</h3>
+                    <ul>
+                        <li class="class-sick-under-five">
+                            <label for="sick-under-five">በቤተሰብ ውስጥ ከ5 አመት እድሜ በታች ካሉት ህፃናት ባለፉት ሁለት ሳምንታት የታመሙ ነበሩ ?</label>
+                            <select name="sick-under-five" id="sick-under-five">
+                            <option value="አዎ ስንት_______">አዎ ስንት_______ </option>
+                            <!-- ቶግል ኮድ ጎዝ ሂር -->
+                            <option value="የለም "> የለም</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="number" id="h-sick-under-five" name="h-sick-under-five" style="display: none;">
+                        </li>
+                        <li id="li-yes-sick-under-five" style="display: none;">
+                            <label for="yes-sick-under-five">አዎ ካሉ እያንዳንዳቸው የህመማቸው ሁኔታ ይግለፁ? </label>
+                            <textarea name="yes-sick-under-five" id="yes-sick-under-five" rows="5"></textarea>
+                        </li>
+                        <p>በቤት ውስጥ ከሚገኙት ከ5 አመት በታች ካሉትህፃናት መካከል</p>
+                        <li class="class-no-epiglotis-cut">
+                            <label for="no-epiglotis-cut">አንቃር /እንጥል የተቆረጠላቸው ስንት ናቸው</label>
+                            <input type="number" name="no-epiglotis-cut" id="no-epiglotis-cut" min="0 ">
+                        </li>
+                        <li class="class-no-out-child-tooth">
+                            <label for="no-out-child-tooth">ግግ የወጣላቸው ስንት ናቸው</label>
+                            <input type="number" name="no-out-child-tooth" id="no-out-child-tooth" min="0">
+                        </li>
+                        <li class="class-female-circumcession">
+                            <label for="female-circumcession">ከሴቶች ስንት ተገርዘዋል</label>
+                            <input type="number" name="female-circumcession" id="female-circumcession" min="0">
+                        </li>
+                        <li>
+                            <label for="in-14-days-diharea">በቤተሰብ ውስጥ ካለት 14 ቀናት ውስጥ ተቅማጥ የያዛችው ሌጆች ነበሩ ?</label>
+                            <select name="in-14-days-diharea" id="in-14-days-diharea" oninput="in14DaysDiharea">
+                            <option value="አዎ ስንት"> አዎ ስንት_______ </option>
+                            <option value="የለም ">የለም</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="number" name="h-in-14-days-diharea" id="h-in-14-days-diharea" style="display: none;">
+                        </li>
+                        <li>
+                            <label for="treatment-for-diharea">ተቅማጥ የያዘው ሰው የሚደረግለት ምንድን ነው?</label>
+                            <select name="treatment-for-diharea" id="treatment-for-diharea">
+                            <option value="ፈሳሽ እንዲወስዱ ያደረጋል">ፈሳሽ እንዲወስዱ ያደረጋል</option>
+                            <option value="ኦአር ኤስ እንዲወስዱ ይደረጋል">ኦአር ኤስ እንዲወስዱ ይደረጋል</option>
+                            <option value="ሌላ ካለ(ይጥቀሱ)">ሌላ ካለ(ይጥቀሱ)</option>
+                        </select>
+                        </li>
+                        <li class="class-reason-take-ors">
+                            <label for="reason-take-ors">ኦአር ኤስ እንዲወስዱ የሚያደርጉ ከሆነ ምክንያትዎ ምንድን ነው ?</label>
+                            <select name="reason-take-ors" id="reason-take-ors">
+                            <option value="ጥቅሙን ባለማወቅ">ጥቅሙን ባለማወቅ </option>
+                            <option value="ለመግዛት ባለመቻሌ">ለመግዛት ባለእመቻሌ</option>
+                            <option value="ስለማይገኝ">ስለማይገኝ </option>
+                            <option value="ሌላ ካለ ይግለጹ">ሌላ ካለ ይግለጹ</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" name="h-reason-take-ors" id="h-reason-take-ors" style="display: none;">
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+            <input type="button" value="ክፍል 4፡ የተለያዩ ህብረተሰቡን የሚመለከቱ የጤና መረጃዎች" class="shater" id="shater4">
+            <section id="section4" style="display: none;">
+                <fieldset>
+                    <h3>የተለያዩ ህብረተሰቡን የሚመለከቱ የጤና መረጃዎች</h3>
+                    <p>ባለፈት 2 ሳምንታት በቤተሰቡ የታመሙ ወይም በህክምና ክትትል ያሉ ሰዎች ቁጥር (ከ5 አመት በታች ያሉ ህፃናትና እናቶችንም ይጨምራል)</p>
+                    <ul>
+                        <li class="class-p1-desease-type">
+                            <label for="p1-desease-type">የግለሰብ 1 የበሽታ አይነት</label>
+                            <input type="text" id="p1-desease-type" name="p1-desease-type">
+                        </li>
+                        <li class="class-p1-sex-desease">
+                            <label for="p1-sex-desease">የግለሰብ 1 ፆታ</label>
+                            <select name="p1-sex-desease" id="p1-sex-desease">
+                        <option value="ወንድ">ወንድ</option>
+                        <option value="ሴት">ሴት</option>
+                    </select>
+                        </li>
+                        <li class="class-p1-age-for-desease">
+                            <label for="p1-age-for-desease">የግለሰብ 1 እድሜ</label>
+                            <input type="number" id="p1-age-for-desease" name="p1-age-for-desease" min="0">
+                        </li>
+                        <li class="class-2-desease-type">
+                            <label for="p2-desease-type">የግለሰብ 2 የበሽታ አይነት</label>
+                            <input type="text" id="p2-desease-type" name="p2-desease-type">
+                        </li>
+                        <li class="class-p2-sex-desease">
+                            <label for="p2-sex-desease">የግለሰብ 2 ፆታ</label>
+                            <select name="p2-sex-desease" id="p2-sex-desease">
+                        <option value="ወንድ">ወንድ</option>
+                        <option value="ሴት">ሴት</option>
+                        </select>
+                        </li>
+                        <li class="class-p2-age-for-desease">
+                            <label for="p2-age-for-desease">የግለሰብ 2 እድሜ</label>
+                            <input type="number" id="p2-age-for-desease" name="p2-age-for-desease" min="0">
+                        </li>
+                        <li class="class-p3-desease-type">
+                            <label for="p3-desease-type">የግለሰብ 3 የበሽታ አይነት</label>
+                            <input type="text" id="p3-desease-type" name="p3-desease-type">
+                        </li>
+                        <li class="class-p3-sex-desease">
+                            <label for="p3-sex-desease">የግለሰብ 3 ፆታ</label>
+                            <select name="p3-sex-desease" id="p3-sex-desease">
+                        <option value="ወንድ">ወንድ</option>
+                        <option value="ሴት">ሴት</option>
+                    </select>
+                        </li>
+                        <li class="class-p3-age-for-desease">
+                            <label for="p3-age-for-desease">የግለሰብ 3 እድሜ</label>
+                            <input type="number" id="p3-age-for-desease" name="p3-age-for-desease" min="0">
+                        </li>
+                        <li class="class-p4-desease-type">
+                            <label for="p4-desease-type">የግለሰብ 4 የበሽታ አይነት</label>
+                            <input type="text" id="p4-desease-type" name="p4-desease-type">
+                        </li>
+                        <li class="class-p4-sex-desease">
+                            <label for="p4-sex-desease">የግለሰብ 4 ፆታ</label>
+                            <select name="p4-sex-desease" id="p4-sex-desease">
+                            <option value="ወንድ">ወንድ</option>
+                            <option value="ሴት">ሴት</option>
+                        </select>
+                        </li>
+                        <li class="class-p4-age-for-desease">
+                            <label for="p4-age-for-desease">የግለሰብ 4 እድሜ</label>
+                            <input type="number" id="p4-age-for-desease" name="p4-age-for-desease" min="0 ">
+                        </li>
+                    </ul>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h3>ከቤተሰብዎ መካከል የአካል መጉደል የደረሰባችው ካሉ ብዛት ( ለምሳሌ የእጅ፣የእግር፣የጀሮ፣የአእምሮ ወዘተ)</h3>
+                    <ul>
+                        <li class="class-p1-disability-type">
+                            <label for="p1-disability-type">የግለሰብ 1 የአካል ጉዳት አይነት</label>
+                            <input type="text" id="p1-disability-type" name="p1-disability-type">
+                        </li>
+                        <li>
+                            <label for="p1-sex-disability">የግለሰብ 1 ፆታ</label>
+                            <select name="p1-sex-disability" id="p1-sex-disability">
+                            <option value="ወንድ">ወንድ</option>
+                            <option value="ሴት">ሴት</option>
+                        </select>
+                        </li>
+                        <li class="class-p1-age-for-disability">
+                            <label for="p1-age-for-disability">የግለሰብ 1 እድሜ</label>
+                            <input type="number" id="p1-age-for-disability" name="p1-age-for-disability" min="0">
+                        </li>
+                        <li class="class-p2-disability-type">
+                            <label for="p2-disability-type">የግለሰብ 2 የአካል ጉዳት አይነት</label>
+                            <input type="text" id="p2-disability-type" name="p2-disability-type">
+                        </li>
+                        <li class="class-p2-sex-disability">
+                            <label for="p2-sex-disability">የግለሰብ 2 ፆታ</label>
+                            <select name="p2-sex-disability" id="p2-sex-disability">
+                            <option value="ወንድ">ወንድ</option>
+                            <option value="ሴት">ሴት</option>
+                        </select>
+                        </li>
+                        <li class="class-p2-age-for-disability">
+                            <label for="p2-age-for-disability">የግለሰብ 2 እድሜ</label>
+                            <input type="number" id="p2-age-for-disability" name="p2-age-for-disability" min="0">
+                        </li>
+                        <li class="class-p3-disability-type">
+                            <label for="p3-disability-type">የግለሰብ 3 የአካል ጉዳት አይነት</label>
+                            <input type="text" id="p3-disability-type" name="p3-disability-type">
+                        </li>
+                        <li class="class-p1-sex-disability">
+                            <label for="p1-sex-disability">የግለሰብ 3 ፆታ</label>
+                            <select name="p3-sex-disability" id="p3-sex-disability">
+                            <option value="ወንድ">ወንድ</option>
+                            <option value="ሴት">ሴት</option>
+                        </select>
+                        </li>
+                        <li class="class-p3-age-for-disability">
+                            <label for="p3-age-for-disability">የግለሰብ 3 እድሜ</label>
+                            <input type="number" id="p3-age-for-disability" name="p3-age-for-disability" min="0">
+                        </li>
+                        <li class="class-medicated-at">
+                            <label for="medicated-at">በቤተሰብዎ ሇሚደርስብዎ የጤና ችግር መፌትሄ የሚሹት መጀመሪያ በአብዛኛው ከየት ነው</label>
+                            <select name="medicated-at" id="medicated-at">
+                            <option value="ከጤና ድርጅት">ከጤና ድርጅት</option>
+                            <option value="ከባህሊዊ ህክምና ">ከባህላዊ ህክምና</option>
+                            <option value="ከጠመሌ">ከጠመል</option>
+                            <option value="ከጠንቋይ">ከጠንቋይ</option>
+                        </select>
+                        </li>
+                    </ul>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h3>የመድሀኒት አጠቃቀምን በተመለከተ</h3>
+                    <ul>
+                        <li class="class-get-medicine-at">
+                            <label for="get-medicine-at">የህመም ስሜት ሲሰማዎት የሚያስፈልግዎትን መድሀኒት የሚያገኑት ከየት ነው ?</label>
+                            <select name="get-medicine-at" id="get-medicine-at">
+                            <option value="ከመድሀኒት ቤት ">ከመድሀኒት ቤት</option>
+                            <option value="ከሱቅ ">ከሱቅ</option>
+                            <option value="ከባህል መድሀኒት ቤት ">ከባህል መድሀኒት ቤት</option>
+                            <option value="ሌላ ሰው ከታዘዘለት ">ሌላ ሰው ከታዘዘለት</option>
+                        </select>
+                        </li>
+                        <li class="class-medicated-properly">
+                            <label for="medicated-properly">በጤና ባለሙያ የታዘዘለዎትን መድሀኒት በተወሰነ ስዓትና ጊዜ ይወስዳሉ?</label>
+                            <select name="medicated-properly" id="medicated-properly">
+                            <option value="አዎ ">አዎ</option>
+                            <option value="አልወስድም ">አልወስድም</option>
+                            <option value="በድሀኒት ታዝዞልኝ አያውቅም ">በድሀኒት ታዝዞልኝ አያውቅም</option>
+                        </select>
+                        </li>
+                        <li class="class-consiquence-of-bad-medication">
+                            <label for="consiquence-of-bad-medication"> </label>
+                            <select name="consiquence-of-bad-medication" id="consiquence-of-bad-medication">
+                            <option value="ከበሽታ አሇመፇወስ ">ከበሽታ አሇመፇወስ</option>
+                            <option value="በሽታው በድሀኒቱን መሇማመድ ">በሽታው በድሀኒቱን መሇማመድ</option>
+                            <option value="በሽታው ማገርሸት ">በሽታው ማገርሸት</option>
+                            <option value="ምንም ችግር አያመጣም ">ምንም ችግር አያመጣም</option>
+                        </select>
+                        </li>
+                        <li class="class-traditional-medicine">
+                            <label for="traditional-medicine">የባህላዊ መድሀኒት ተጠቅመው ያውቃሉ ?</label>
+                            <select name="traditional-medicine" id="traditional-medicine">
+                            <option value="አዎ ">አዎ</option>
+                            <option value="አላውቅም ">አላውቅም</option>
+                        </select>
+                        </li>
+                        <li></li>
+                    </ul>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h3>የአእምሮ ሁኔታ በተመለከተ</h3>
+                    <ul>
+                        <li class="class-heared-about-mental-desease">
+                            <label for="heared-about-mental-desease">ስለ አዕምሮ ህመም ሰምተው ያውቃሉ?</label>
+                            <select name="heared-about-mental-desease" id="heared-about-mental-desease">
+                            <option value="አዎ">አዎ</option>
+                            <option value="አላውቅም">አላውቅም</option>
+                        </select>
+                        </li>
+                        <li class="class-know-about-mental-problem">
+                            <label for="know-about-mental-problem">የአዕምሮ ህመም በምን ምክንያት እንደሚመጣ ያውቃሉ ?</label>
+                            <select name="know-about-mental-problem" id="know-about-mental-problem">
+                            <option value="አዎ">አዎ</option>
+                            <option value="አሊውቅም">አላውቅም</option>
+                        </select>
+                        </li>
+                        <li class="class-think-metal-desease-cominicable">
+                            <label for="think-metal-desease-cominicable">የአዕምሮ ህመም ከሰው ወደ ሰው ይተላለፊል ብለው ያስባሉ?</label>
+                            <select name="think-metal-desease-cominicable" id="think-metal-desease-cominicable">
+                            <option value="አዎ">አዎ</option>
+                            <option value="አሊውቅም">አላውቅም</option>
+                        </select>
+                        </li>
+                        <li class="class-exist-mentaly-ill-person">
+                            <label for="exist-mentaly-ill-person">በቤተሰብ ውስጥ የአዕምሮ ህመም ያለበት ሰው አለ (የሚጥል በሽታ ጨምሮ)</label>
+                            <select name="exist-mentaly-ill-person" id="exist-mentaly-ill-person">
+                            <option value="አዎ">አዎ</option>
+                            <option value="አላውቅም">አላውቅም</option>
+                 </select>
+                        </li>
+                        <li class="class-think-mental-illness-curable">
+                            <label for="think-mental-illness-curable">የአዕምሮ ህመም የሚታከም ህመም ነው ብለው ያምናሉ ? </label>
+                            <select name="think-mental-illness-curable" id="think-mental-illness-curable">
+                            <option value="አዎ ">አዎ</option>
+                            <option value="አላውቅም">አላውቅም</option> 
+                        </select>
+                        </li>
+                        <li class="class-family-mental-illness-medicated-at">
+                            <label for="family-mental-illness-medicated-at">የአዕምሮ ህመም በቤተሰብ ወይም በህብረተሰቡ ቢኖር የት ሄደው መታከም አለበት ይላሉ?</label>
+                            <select name="family-mental-illness-medicated-at" id="family-mental-illness-medicated-at">
+                            <option value="ጤና ተቋም">ጤና ተቋም</option>
+                            <option value="ፀልት ቤት/ የእምነት ተቋም">ፀሎት ቤት/ የእምነት ተቋም</option>
+                            <option value="ጠንቋይ ቤት">ጠንቋይ ቤት</option>
+                            <option value="የባህል መድሀኒት ቤት">የባህል መድሀኒት ቤት</option>
+                            <option value="ሌላ ካለ ይግለፁ">ሌላ ካለ ይግለፁ</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" name="h-family-mental-illness-medicated-at" id="h-family-mental-illness-medicated-at" style="display: none;">
+                        </li>
+                        <li class="class-exist-drug-user">
+                            <label for="exist-drug-user"> ቤተሰብ ውስጥ (እንደ አልኮል፣ጫት፣ሲጋራ፣ሽሻ) የሚጠቀም አለ ?</label>
+                            <select name="exist-drug-user" id="exist-drug-user">
+                            <option value="አዎ ካለ ይግለፁ ">አዎ ካሉ ይግለፁ</option>
+                            <!-- toggle code goes here -->
+                            <option value="የለም ">የለም</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" name="h-exist-drug-user" id="h-exist-drug-user" style="display: none;">
+                        </li>
+                        <li>
+                            <label for="think-drug-dangerous">ሱስ አምጪ ነገሮች እንደ ጫት ፣ሲጋራ፣ሽሻ አልኮልና ሌላችም የአዕምሮ ህመም ያመጣሉ ብለው ያስባሉ? </label>
+                            <select name="think-drug-dangerous" id="think-drug-dangerous">
+                            <option value="አዎ">አዎ</option>
+                            <option value="አላስብም">አላስብም</option>
+                        </select>
+                        </li>
+                    </ul>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h3>የአይን ህመም በተመለከተ </h3>
+                    <li class="class-konw-tracoma">
+                        <label for="konw-tracoma">የአይን ማዝ (ትራኮማ) በሽታ ምን እንደሆነ ያውቃሉ?</label>
+                        <select name="konw-tracoma" id="konw-tracoma" onclick="konwTracoma(this)">
+                        <option value="አዎ">አዎ</option>
+                        <option value="አላውቅም ">አላውቅም</option>
+                    </select>
+                    </li>
+                    <li id="li-yes-know-tracoma-reason" style="display: none;">
+                        <label for="yes-know-tracoma-reason">መልስዎ አወ ከሆነ የአይን ማዝ (ትራኮማ) በሽታ መተላለፊያ መንገዱ ምንድን ነው?</label>
+                        <select name="yes-know-tracoma-reason" id="yes-know-tracoma-reason" onclick="yesKnowTracomaReason(this)">
+                        <option value="የአባባቢ ንፅህና መጓደል ">የአባባቢ ንፅህና መጓደል </option>
+                        <option value="የግል ንፅህና አለመጠበቅ ">የግል ንፅህና አለመጠበቅ</option>
+                        <option value="በበሽታው ከተያሀ ሰው ጋር ንክኪ በመፍጠር ">በበሽታው ከተያሀ ሰው ጋር ንክኪ በመፍጠር</option>
+                        <option value="በዝንብ አማካኝናት ">በዝንብ አማካኝናት</option>
+                        <option value="ሌላ">ሌላ ካለ  ይግለፁ</option>
+                    </select>
+                    </li>
+                    <li>
+                        <input type="text" name="h-yes-know-tracoma-reason" id="h-yes-know-tracoma-reason" style="display: none;">
+                    </li>
+                    <li class="class-think-control-tracoma">
+                        <label for="think-control-tracoma">የአይን ማዝ (ትራኮማ) በሽታን መከሊከሌ ይቻሊሌ ብሇው ያምናለ</label>
+                        <select name="think-control-tracoma" id="think-control-tracoma">
+                        <option value="አዎ">አዎ </option>
+                        <option value="አይቻልም">አይቻልም</option>
+                        <option value="አላውቅም">አላውቅም</option>
+                    </select>
+                    </li>
+                    <li class="class-yes-know-tracoma-reason1">
+                        <label for="yes-know-tracoma-reason1">መልስዎ አወ ከሆነ በምን መንገድ መከላከል ይቻላል (ከአንድ በላይ መሌስ ካለ ያክቡት )</label>
+                        <select name="yes-know-tracoma-reason1" id="yes-know-tracoma-reason1">
+                        <option value="የግልና የአባባቢ ንፅህና በመጠበቅ">የግልና የአባባቢ ንፅህና በመጠበቅ</option>
+                        <option value="ዘመናዊ ህክምና በመውሰድ">ዘመናዊ ህክምና በመውሰድ</option>
+                        <option value="ባህላዊ ህክምና በመውሰድ ">ባህላዊ ህክምና በመውሰድ</option>
+                        <option value="በራሱ ጌዜ ስለሚድን ለተወሰነ ቀናት ዝም ብሎ ማየት">በራሱ ጌዜ ስለሚድን ለተወሰነ ቀናት ዝም ብሎ ማየት</option>
+                    </select>
+                    </li>
+                    <li class="class-exist-tracoma-victim">
+                        <label for="exist-tracoma-victim">በቤትውስጥ በትራኮማ የተጠቃ ሰው አለ?</label>
+                        <select name="exist-tracoma-victim" id="exist-tracoma-victim">
+                        <option value="አዎ ስንት">አዎ ስንት</option>
+                        <option value="የለም">የለም</option>
+                    </select>
+                    </li>
+                    <li>
+                        <input type="number" name="h-exist-tracoma-victim" id="h-exist-tracoma-victim" style="display: none;">
+                    </li>
+                </fieldset>
+            </section>
+            <input type="button" value="ክፍል 5: የአመጋገብ ሁኔታን የሚዳስስ መጠይቅ" class="shater" id="shater5">
+            <section id="section5" style="display: none;">
+                <fieldset>
+                    <h3>የአመጋገብ ሁኔታን የሚዳስስ መጠይቅ</h3>
+                    <p>የእናት አመጋገብ ሁኔታ ( ከአንድ በላይ 15-49 አመት ያላችው እናቶች ካሉ አንዷን በእጣ ምረጥ)</p>
+                    <p>የደም ማነስ ስሜት አለብዎት?(ከአንድ በላይ መምረጥ ይቻላል)</p>
+                    <ul>
+                        <li class="class-not-seeing-clearly">
+                            <label for="not-seeing-clearly"> የአይን ቭዥታ</label>
+                            <input type="checkbox" name="not-seeing-clearly" id="not-seeing-clearly">
+                        </li>
+                        <li class="class-ear-defening">
+                            <label for="ear-defening">የጆሮ ጩኽት</label>
+                            <input type="checkbox" name="ear-defening" id="ear-defening">
+                        </li>
+                        <li class="class-headache">
+                            <label for="headache">እራስ ማዞር</label>
+                            <input type="checkbox" name="headache" id="headache">
+                        </li>
+                        <li class="class-lausia">
+                            <label for="lausia">በቀላሉ መድከም</label>
+                            <input type="checkbox" name="lausia" id="lausia">
+                        </li>
+                        <li>
+                            <label for="heart-desease">በእንቅስቃሴ ወቅት ጌዜ የልብ ምት መጨመር </label>
+                            <input type="checkbox" name="heart-desease" id="heart-desease">
+                        </li>
+                        <li class="class-no-symptom">
+                            <label for="no-symptom">የለም</label>
+                            <input type="checkbox" id="no-symptom" name="no-symptom">
+                        </li>
+                        <li class="class-write-symptom">
+                            <label for="write-symptom">ሌላ (ይጠቀስ)</label>
+                            <input type="checkbox" id="write-symptom" name="write-symptoms">
+                        </li>
+                        <li>
+                            <input type="text" name="h-write-symptom" id="h-write-symptom" style="display: none;">
+                        </li>
+                        <li class="clas-symptom-of-nemonea">
+                            <label for="symptom-of-nemonea">የደም ማነስ ምልክት አለባችው ( በማየት የሚመለስ )</label>
+                            <!-- toggle code goes here -->
+                            <select name="symptom-of-nemonea" id="symptom-of-nemonea">
+                            <option value="ውስጠኛው የአይን ቆብ መገርጣት">ውስጠኛው የአይን ቆብ መገርጣት</option>
+                            <option value="የእጅ መዳፍ መገርጣት">የእጅ መዳፍ መገርጣት</option>
+                            <option value="የለም">የለም</option>
+                            <option value="ሌላ (ይጠቀስ)">ሌላ (ይጠቀስ)</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" name="h-symptom-of-nemonea" id="h-symptom-of-nemonea" style="display: none;">
+                        </li>
+                        <li>
+                            <label for="lack-of-iron-in-prignancy">በርግዝናዎ ወቅት የአይረን /ብረት ንጥረ ነገር አግኝተዋል ባለፉት 2 አመት ውስጥ ለወለዱ እና አሁን ነፍሰጡር ለሆኑ እናቶች የሚጠየቅ </label>
+                            <!-- toggle code goes here -->
+                            <select name="lack-of-iron-in-prignancy" id="lack-of-iron-in-prignancy">
+                            <option value="አዎ">አዎ</option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <li id="li-yes-lack-of-iron-in-prignancy" style="display: none;">
+                            <label for="yes-lack-of-iron-in-prignancy">አዎ ካሉ ሉምን ያክል ጌዜ ወሰዱ(በቀናት)</label>
+                            <input type="number" name="yes-lack-of-iron-in-prignancy" id="yes-lack-of-iron-in-prignancy" min="0">
+                        </li>
+                        <li class="class-no-eat-in-pregnancy">
+                            <label for="no-eat-in-pregnancy">ነፍስጡር ሲሆን በቀን ስንት ጌዜ ይመገባሉ ? (ባለፉት 2 አመት ወይም አሁን ነፍሰጡር ለሆነች እናት)</label>
+                            <input type="number" id="no-eat-in-pregnancy" name="no-eat-in-pregnancy" min="0">
+                        </li>
+                        <li class="class-no-eat-while-breast-feeding">
+                            <label for="no-eat-while-breast-feeding">በሚያጠቡበት ወቅት በቀን ስንት ጌዜ ይመገባሉ ? (ባለፉት 2 አመት ወይም አሁን ለምታጠባ እናት ) </label>
+                            <input type="number" id="no-eat-while-breast-feeding" name="no-eat-while-breast-feeding" min="0">
+                        </li>
+                        <li class="class-type-of-food-no-pregnancy">
+                            <label for="type-of-food-no-pregnancy">በእርግዝና ወቅት የሚይመገቡት ምግብ አለ(ባለፉት 2 አመት ወይም አሁን ነፍሰጡር ለሆኑ እናት )</label>
+                            <select name="type-of-food-no-pregnancy" id="type-of-food-no-pregnancy">
+                            <option value="አዎ">አዎ(ይጠቀስ)</option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" name="h-type-of-food-no-pregnancy" id="h-type-of-food-no-pregnancy" style="display: none;">
+                        </li>
+                        <li class="class-type-of-while-breast-feeding">
+                            <label for="type-of-while-breast-feeding">ጡት በሚያጠቡበት ወቅት የሚይመገቡት ምግብ አለ? (ባለፉት 2 አመት ወይም አሁን ለምታጠባ እናት )</label>
+                            <select name="type-of-while-breast-feeding" id="type-of-while-breast-feeding">
+                            <option value="አዎ(ይጠቀስ)">አዎ(ይጠቀስ)</option>
+                            <option value="ለም">የለም</option>
+                        </select>
+                        </li>
+                        <li>
+                            <input type="text" name="h-type-of-while-breast-feeding" id="h-type-of-while-breast-feeding" style="display: none;">
+                        </li>
+                    </ul>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h3>የህፃናት የአመጋገብ ሁኔታ ( ከሁት አመት በታች ከአንድ በላይ ህፃን ካለ በእድሜ ትነሹን ውሰድ/ጂ)</h3>
+                    <ul>
+                        <li class="class-start-breast-feeding-since">
+                            <label for="start-breast-feeding-since">ሌጅዎትን ጡት ማጥባት የጀመሩ መቼ ነው?</label>
+                            <select name="start-breast-feeding-since" id="start-breast-feeding-since">
+                            <option value="ወዲያው እንደተወለደ/ች (በአንድ ስዓት ውስጥ) ">ወዲያው እንደተወለደ/ች (በአንድ ስዓት ውስጥ)</option>
+                            <option value="ከተወለደ/ች (ከአንድ ስዓት በኃላ) ">ከተወለደ/ች (ከአንድ ስዓት በኃላ)</option>
+                            <option value=" ጡት አልጠባም /ችም "> ጡት አልጠባም /ችም</option>
+                        </select>
+                        </li>
+                        <li class="class-feed-other-than-breast-after-birth">
+                            <label for="feed-other-than-breast-after-birth">ጡት ከማጥባትዎ በፉት ለልጅዎ እንደተወለደ /ች የሰጡት /ጧት ነገር አለ</label>
+                            <select name="feed-other-than-breast-after-birth" id="feed-other-than-breast-after-birth">
+                            <option value="አዎ">አዎ</option>
+                            <option value="የለም"> የለም</option>
+                        </select>
+                        </li>
+                        <li class="class-give-the-first-breast">
+                            <label for="give-the-first-breast">ለልጅዎ የመጀመሪያውን ጡት ወተት/አንገር ሰጥተውታል</label>
+                            <select name="give-the-first-breast" id="give-the-first-breast">
+                            <option value="አዎ">አዎ </option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <li>
+                            <label for="feed-only-breast">ልጅዎትን ጡት ብቻ አጥብተዋል</label>
+                            <select name="feed-only-breast" id="feed-only-breast">
+                            <option value="አዎ">አዎ</option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <li class="class-how-long-feed-only-breast">
+                            <label for="how-long-feed-only-breast">ለምን ያህል ጌዜ ጡት ብቻ አጠቡት/ቧት (ውሃን ሳይጨምር) (በወር)</label>
+                            <input type="number" name="how-long-feed-only-breast" id="how-long-feed-only-breast" min="0">
+                        </li>
+                        <li class="class-no-wash-childs-hand-in-day">
+                            <label for="no-wash-childs-hand-in-day">በአማካኝ ለጅዎን በቀን ስንት ጌዜ ያጠቡታል /ቧታል?</label>
+                            <input type="number" id="no-wash-childs-hand-in-day" name="no-wash-childs-hand-in-day" min="0">
+                        </li>
+                        <li class="class-start-feed-food-at">
+                            <label for="start-feed-food-at">ለልጅዎት ተጨማሪ ምግብ መስጠት የጀመሩ መቼ ነው? በወር</label>
+                            <input type="number" id="start-feed-food-at" name="start-feed-food-at" min="0">
+                        </li>
+                        <li class="class-not-feeding-food">
+                            <label for="not-feeding-food">አሁን ጡት ብቻ ነው የሚጠባው ካሉ ወደ ስንት ወሩ/ሯ ነው</label>
+                            <input type="number" id="not-feeding-food " name="not-feeding-food" min="0">
+                        </li>
+                        <li class="class-type-food-given-first">
+                            <label for="type-food-given-first">በመጀመሪያ ምንአይነት ምግብ ነው የተሰጠው/ጣት?</label>
+                            <select id="type-food-given-first" name="type-food-given-first">
+                            <option value="ፈሳሽ ምግብ አጥሚት">ፈሳሽ ምግብ አጥሚት</option>
+                            <option value="ወፈር ያለ ፈሳሽ ምግቦች/ገንፎ">ወፈር ያለ ፈሳሽ ምግቦች/ገንፎ</option>
+                            <option value="ቤተሰብ የሚመገበውን">ቤተሰብ የሚመገበውን</option>
+                        </select>
+                        </li>
+                        <li class="class-type-of-dish-for-baby">
+                            <label for="type-of-dish-for-baby">ለሌጅዎ ተጨማሪ ምግብ የሚሰጡበት ዕቃ ምን አይነት ነው?</label>
+                            <select name="type-of-dish-for-baby " id="type-of-dish-for-baby ">
+                            <option value="ጡጦ">ጡጦ</option>
+                            <option value="ስኒ/ማንኪያ">ስኒ/ማንኪያ</option>
+                            <option value="ሌላ_____">ሌላ_____</option>
+                        </select>
+                        </li>
+                        <li class="class-still-breast-feeding">
+                            <label for="still-breast-feeding">አሁን ልጅዎን ጡት ያጠቡታል?</label>
+                            <select name="still-breast-feeding" id="still-breast-feeding">
+                            <option value="አዎ">አዎ </option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                        <li class="class-no-month-breast-feeding">
+                            <label for="no-month-breast-feeding">ለምን ያህል ጌዜ አጠቡት ? በወር</label>
+                            <input type="number" name="no-month-breast-feeding" id="no-month-breast-feeding" min="0">
+                        </li>
+                        <li class="class-muacm">
+                            <label for="muacm">የላይኛው ክንድ መሃል ዙሪያ ስፊረት(MUAC) ሳ.ሜ </label>
+                            <input type="number" name="muacm" id="muacm" min="0">
+                        </li>
+                        <li class="class-baby-age">
+                            <label for="baby-age">የልጁ/ጇ እድሜ(ወር)</label>
+                            <input type="number" id="baby-age " name="baby-age" min="0">
+                        </li>
+                        <li class="class-baby-weight">
+                            <label for="baby-weight">የልጁ/ጇ ክብደት በግራም</label>
+                            <input type="number" id="baby-weight " name="baby-weight" min="0">
+                        </li>
+                        <li class="class-baby-height">
+                            <label for="baby-height">የልጁ/ጇ ቁመት ሴ.ሜ</label>
+                            <input type="number" id="baby-height" name="baby-height" min="0">
+                        </li>
+                        <li>
+                            <label for="scratch-on-both-legs">ሁሉም እግር ላይ እብጠት አለ (በማየት የሚመለስ)</label>
+                            <select name="scratch-on-both-legs" id="scratch-on-both-legs">
+                            <option value="አዎ">አዎ</option>
+                            <option value="የለም">የለም</option>
+                        </select>
+                        </li>
+                    </ul>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h3>የቤተሰብ የአመጋገብ ስርዓት</h3>
+                    <ul>
+                        <li>
+                            <label for="type-of-salt">ቤት ውስጥ ምን አይነት ጨው ይጠቀማሉ?</label>
+                            <select name="type-of-salt" id="type-of-salt">
+                            <option value="አሞሌ ጨ ">አሞሌ ጨው</option>
+                            <option value=" አይወዲን የሌለው ጨው"> አይወዲን የሌለው ጨው</option>
+                            <option value="አይወዲን ያለው ጨው">አይወዲን ያለው ጨው</option>
+                        </select>
+                        </li>
+                        <li>
+                            <label for="use-salt-at">ጨውን መቼ ነው የሚጠቀሙት?</label>
+                            <select name="use-salt-at" id="use-salt-at">
+                            <option value="ወጥ በሚሰራበት ጌዜ">ወጥ በሚሰራበት ጌዜ</option>
+                            <option value="ወጥ ከተሰራ በኋላ">ወጥ ከተሰራ በኋላ</option>
+                        </select>
+                        </li>
+                        <li>
+                            <label for="place-salt-at">ወጥ ከተሰራ በኋላ</label>
+                            <select name="place-salt-at" id="place-salt-at">
+                            <option value="በክፌት እቃ"> በክፍት እቃ </option>
+                            <option value="በተከደነ እቃ">በተከደነ እቃ</option>                            
+                        </select>
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+            <button type="submit" id="sbt">Submit</button>
+        </form>
+    </section>
+    <section></section>
+</body>
+<script src="alkan.js">
+</script>
+
+</html>
